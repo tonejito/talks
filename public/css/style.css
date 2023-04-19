@@ -1,0 +1,158 @@
+/*	style.css	*/
+
+/*
+https://www.w3schools.com/colors/colors_names.asp
+https://www.w3schools.com/colors/colors_groups.asp
+*/
+
+html, body, section, div, p, a, li
+{
+  font-family: "Ubuntu", "Helvetica", sans-serif !important;
+}
+
+pre, code
+{
+  font-family: "Ubuntu Mono", "Courier New", monospace !important;
+}
+
+code
+{
+  color: orange;
+}
+
+.slide h1
+{
+  font-family: "Ubuntu", "Helvetica", sans-serif !important;
+  text-transform: none !important;
+  text-align: center !important;
+  color: Lime;
+}
+
+.slide h2
+{
+  font-family: "Ubuntu", "Helvetica", sans-serif !important;
+  text-transform: none !important;
+  text-align: center !important;
+  color: Chartreuse;
+}
+
+.slide h3
+{
+  font-family: "Ubuntu", "Helvetica", sans-serif !important;
+  text-transform: none !important;
+  text-align: center !important;
+  color: GreenYellow;
+}
+
+.slide h4
+{
+  font-family: "Ubuntu", "Helvetica", sans-serif !important;
+  text-transform: none !important;
+  text-align: center !important;
+  color: YellowGreen;
+}
+
+.slide h5
+{
+  font-family: "Ubuntu", "Helvetica", sans-serif !important;
+  text-transform: none !important;
+  text-align: center !important;
+  color: LawnGreen;
+}
+
+.slide h6
+{
+  font-family: "Ubuntu", "Helvetica", sans-serif !important;
+  text-transform: none !important;
+  text-align: center !important;
+  color: SpringGreen;
+}
+
+.mail
+{
+  width: auto;
+  height: 0.6em;
+  display: inline-block;
+}
+
+.icon
+{
+  width: auto;
+  height: 2em;
+  text-align: center !important;
+}
+
+.icon-text
+{
+  font-size: 2em;
+  margin: 20px 0px;
+  vertical-align: top;
+}
+
+.red
+{
+  color: red;
+}
+
+.yellow
+{
+  color: yellow;
+}
+
+.blue
+{
+  color: blue;
+}
+
+.orange
+{
+  color: orange;
+}
+
+.purple
+{
+  color: purple;
+}
+
+.green
+{
+  color: green;
+}
+
+.cyan
+{
+  color: cyan;
+}
+
+.magenta
+{
+  color: magenta;
+}
+
+img
+{
+  font-style: italic;
+}
+
+.caption
+{
+  vertical-align: middle;
+  margin: 0px auto;
+  min-width: 95%;
+  max-width: 95%;
+  /* min-height: 3em; */
+  max-height: 3em;
+  background-color: black;
+  color: yellow;
+  text-shadow: -1px 0 silver, 0 1px silver, 1px 0 silver, 0 -1px silver;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+}
+
+.margin-zero
+{
+  margin: 0px !important;
+  border: 0px !important;
+  padding: 0px !important;
+}

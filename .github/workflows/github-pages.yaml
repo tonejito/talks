@@ -1,0 +1,166 @@
+#	.github/workflows/github-pages.yaml
+#	= ^ . ^ =
+
+# Ensure GitHub Pages is enabled
+# Create a '.nojekyll' file in the root of the repository
+
+name: github-pages
+
+permissions:
+  id-token: write
+  contents: read
+  pages: write
+  deployments: write
+
+on:
+  push:
+    branches:
+    - "main"
+    # - "master"
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    container:
+      # This image runs with the 'root' user, thus the following warning WILL appear when executing PIP
+        # WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager.
+        # It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+      image: python:3.11-slim-bullseye
+    defaults:
+      run:
+        shell: bash
+    env:
+      TERM: linux
+    steps:
+
+      - name: Fix permissions on HOME
+        shell: bash
+        run: |
+          chown -R "$(id -u):$(id -g)" "${HOME}"
+
+      - name: Set PATH
+        shell: bash
+        run: |
+          echo "${HOME}/.local/bin" >> $GITHUB_PATH
+
+      - name: Configure APT
+        shell: bash
+        env:
+          APT_CONF_LOCAL: /etc/apt/apt.conf.d/99-local
+        # This container runs as root, `sudo` is not needed before `tee`
+        run: |
+          mkdir -vp $(dirname "${APT_CONF_LOCAL}")
+          truncate --size=0 "${APT_CONF_LOCAL}"
+          cat | tee -a "${APT_CONF_LOCAL}" << EOF
+            #	/etc/apt/apt.conf.d/99-local
+            quiet "2";
+            APT::Get::Assume-Yes "1";
+            APT::Install-Recommends "0";
+            APT::Install-Suggests "0";
+            APT::Color "0";
+            Dpkg::Progress "0";
+            Dpkg::Progress-Fancy "0";
+          EOF
+
+      - name: Install packages with APT
+        shell: bash
+        env:
+          TERM: linux
+          DEBIAN_PRIORITY: critical
+          DEBIAN_FRONTEND: noninteractive
+          DEBCONF_NOWARNINGS: "yes"
+          DEBCONF_TERSE: "yes"
+          DEBCONF_NONINTERACTIVE_SEEN: "true"
+        run: |
+          apt-get -q=2 update
+          apt-get -q=2 install make git wget
+
+      - name: Configure PIP
+        shell: bash
+        run: |
+          pip3 config --global set global.quiet 1
+          pip3 config --global set global.progress_bar off
+          pip3 install --user --upgrade pip
+
+      - name: Install packages with PIP
+        shell: bash
+        run: |
+          pip3 install --user pre-commit
+
+      # https://pandoc.org/installing.html#linux
+      - name: Install pandoc from TAR
+        shell: bash
+        env:
+          PANDOC_TAR_URL: "https://github.com/jgm/pandoc/releases/download/3.1.2/pandoc-3.1.2-linux-amd64.tar.gz"
+          PANDOC_TAR: "/tmp/pandoc.tar.gz"
+        run: |
+          wget -c -nv -O "${PANDOC_TAR}" "${PANDOC_TAR_URL}"
+          tar -xzf "${PANDOC_TAR}" --strip-components 1 -C /usr/local
+          rm -v "${PANDOC_TAR}"
+          which pandoc
+          whereis pandoc
+          pandoc --version
+
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          set-safe-directory: true
+
+      # Add repository path as safe.directory for git "system" config
+      # This is needed when running inside a container
+      - name: Mark repository as 'safe' in SYSTEM git config
+        shell: bash
+        run: |
+          git config --system --add safe.directory "${GITHUB_WORKSPACE}"
+          chown -R "$(id -u):$(id -g)" "${GITHUB_WORKSPACE}"
+
+      - name: Run pre-commit via custom action
+        uses: pre-commit/action@v3.0.0
+
+      - name: Build the site with Makefile
+        shell: bash
+        run: |
+          make
+
+      # Inside the ZIP file there needs to be *only one file* named 'artifact.tar'
+      - name: Archive artifact
+        shell: bash
+        run: |
+          tar \
+            --dereference --hard-dereference \
+            --directory public \
+            --exclude=.git \
+            --exclude=.gitkeep \
+            -cvf /tmp/artifact.tar \
+            ./ \
+          ;
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3.1.0
+        with:
+          name: github-pages
+          path: /tmp/artifact.tar
+          if-no-files-found: error
+          retention-days: 0
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+
+      # Deploy the contents of 'artifact.tar' to GitHub pages
+      - name: Deploy GitHub pages
+        id: deployment
+        uses: actions/deploy-pages@v1.0.6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

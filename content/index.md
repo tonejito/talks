@@ -12,3 +12,5 @@ lang: es-MX
 ---
 
 <!--	= ^ . ^ =	-->
+
+- [Tareas en `git`](tareas-git/)

@@ -97,6 +97,21 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 
 --------------------------------------------------------------------------------
 
+### Contexto
+
+- Siempre dejamos la documentación "para después" y nunca se escribe
+- La documentación no es entregar un documento <u>**sin texto**</u> que sólo tenga capturas de pantalla
+- Los alumnos no están familiarizados con las revisiones de código
+    - Tampoco con escribir documentación
+    - Y aún así quieren ser programadores \
+      _full-snack_	🥨
+
+::: notes
+- No estamos acostumbrados a escribir la documentación
+:::
+
+--------------------------------------------------------------------------------
+
 # ¿Y por qué no entregamos las tareas en `%s`?
 
 --------------------------------------------------------------------------------
@@ -732,6 +747,25 @@ Para los alumnos
   </p>
 </div>
 <div class="caption">Yo también quiero vivir ese sueño señor Pool</div>
+
+--------------------------------------------------------------------------------
+
+### Evolución
+
+###### Antes	🖋️ 🤔
+
+- El perro se comió mi tarea (física)	🐶 📁 📝
+- El perro se comió mi memoria USB	🐶 💾 💿
+- El servidor de correo se comió mi tarea	✉️
+
+###### Ahora	💻 😅
+
+- El _repo_ local de `git` se comió mi tarea	👩‍💻 ❌
+- El servidor de `git` se comió mi tarea	🌎 🚸
+- El merge request se comió mi tarea	🧑‍🏫 ⛔
+
+::: notes
+:::
 
 --------------------------------------------------------------------------------
 

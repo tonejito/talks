@@ -30,7 +30,7 @@ build:
 	done ;
 
 list:
-	find ${PUBLIC_DIR} -mindepth 1 -maxdepth 2 -type f
+	find ${PUBLIC_DIR} -mindepth 1 -maxdepth 2 -type f \( ! -name '.*' \) -print
 
 watch:
 	python3 watch.py

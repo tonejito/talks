@@ -54,7 +54,7 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 - ¿Por qué 🤬 pido a los alumnos que entreguen las tareas en `git`?
 :::
 
-[🐰]: https://gravatar.com/avatar/4cc702785290b4934c531c56f6061e5e.png "🐰"
+[🐰]: https://gravatar.com/avatar/4cc702785290b4934c531c56f6061e5e "🐰"
 [cc-by-sa-page]: http://creativecommons.org/licenses/by-sa/4.0/ "CC-BY-SA-4.0"
 [cc-by-sa-img-big]: img/cc-by-sa.png "Creative Commons Attribution ShareAlike 4.0 International License"
 [cc-by-sa-img-big-ext]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png "Creative Commons Attribution ShareAlike 4.0 International License"

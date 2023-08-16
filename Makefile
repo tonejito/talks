@@ -14,6 +14,8 @@ DIRS=$(shell find ${CONTENT_DIR} -mindepth 1 -maxdepth 1 -type d \( ! -name '.*'
 
 default:	index build list
 
+all:	default serve
+
 check:
 	pre-commit run --all-files
 
@@ -30,7 +32,8 @@ build:
 	done ;
 
 list:
-	find ${PUBLIC_DIR} -mindepth 1 -maxdepth 2 -type f \( ! -name '.*' \) -print
+	# find ${PUBLIC_DIR} -mindepth 1 -maxdepth 2 -type f \( ! -name '.*' \) -print
+	find ${PUBLIC_DIR} -mindepth 1 -maxdepth 2 -type f ! \( -name '*.png' -o -name '*.svg' -o -name '.DS_Store' -o -name '.gitkeep' \) -print
 
 watch:
 	python3 watch.py

@@ -13,4 +13,7 @@ lang: es-MX
 
 <!--	= ^ . ^ =	-->
 
-- [Tareas en `git`](tareas-git/)
+|	|	|
+|:------|:------|
+| [Tareas en `git`](tareas-git/) | Abril 2023
+| [Introducción a GNU/Linux](gnu-linux/) | Agosto 2023

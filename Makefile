@@ -24,11 +24,12 @@ index:
 	pandoc ${PANDOC_FLAGS} -o ${PUBLIC_DIR}/index.html ${CONTENT_DIR}/index.md
 
 build:
+	touch ${PUBLIC_DIR}/favicon.ico
 	for DIR in $(DIRS) ; \
 	do \
 	  echo $${DIR} ; \
 	  test -d ${PUBLIC_DIR}/$${DIR} || mkdir -vp ${PUBLIC_DIR}/$${DIR} ; \
-	  $(MAKE) -C ${CONTENT_DIR}/$${DIR} ; \
+	  $(MAKE) -f ../Makefile.content -C ${CONTENT_DIR}/$${DIR} ; \
 	done ;
 
 list:

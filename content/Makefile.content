@@ -7,11 +7,14 @@ PANDOC_CFG=../pandoc.cfg
 THIS_DIR=$(shell basename $(CURDIR))
 CONTENT_DIR=.
 PUBLIC_DIR=../../public/${THIS_DIR}
-PANDOC_FLAGS=--defaults ${PANDOC_CFG}
+PANDOC_FLAGS=--defaults ${PANDOC_CFG} --css=../css/style.css
 
 default:	build
 
 build:	${INPUT}
 	test -d "${PUBLIC_DIR}" || mkdir -vp "${PUBLIC_DIR}"
 	pandoc ${PANDOC_FLAGS} -o ${PUBLIC_DIR}/index.html ${CONTENT_DIR}/index.md
-	test -d ${CONTENT_DIR}/css && cp -vr ${CONTENT_DIR}/css ${PUBLIC_DIR}
+	for DIR in css js img ; \
+	do \
+	  test -d ${CONTENT_DIR}/$${DIR} && cp -vr ${CONTENT_DIR}/$${DIR} ${PUBLIC_DIR} ; \
+	done

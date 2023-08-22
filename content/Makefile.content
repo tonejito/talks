@@ -16,5 +16,8 @@ build:	${INPUT}
 	pandoc ${PANDOC_FLAGS} -o ${PUBLIC_DIR}/index.html ${CONTENT_DIR}/index.md
 	for DIR in css js img ; \
 	do \
-	  test -d ${CONTENT_DIR}/$${DIR} && cp -vr ${CONTENT_DIR}/$${DIR} ${PUBLIC_DIR} ; \
+	  if [ -d ${CONTENT_DIR}/$${DIR} ] ; \
+	  then \
+	  	cp -vr ${CONTENT_DIR}/$${DIR} ${PUBLIC_DIR} ; \
+	  fi ; \
 	done

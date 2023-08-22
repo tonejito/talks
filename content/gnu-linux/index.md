@@ -364,7 +364,9 @@ set mouse=
 
 ### Permisos del sistema de archivos
 
-- `-rw-r-----	tonejito:staff	archivo.txt`
+<div style="font-size: 0.9em; text-align: center;">
+`-rw-r-----	tonejito:staff	archivo.txt`
+</div>
 
 Modo "simbólico" y modo "octal"
 
@@ -379,7 +381,7 @@ Modo "simbólico" y modo "octal"
 
 --------------------------------------------------------------------------------
 
-```
+```bash
 $ touch archivo.txt
 $ chmod 0640 archivo.txt
 $ chown tonejito:staff archivo.txt
@@ -395,3 +397,118 @@ Modify: 2023-08-19 23:58:59.244000000 -0600
 Change: 2023-08-19 23:58:59.920000000 -0600
  Birth: 2023-08-19 23:58:59.244000000 -0600
 ```
+
+--------------------------------------------------------------------------------
+
+### `su`: <u>S</u>witch <u>U</u>ser
+
+- Permite cambiar de usuario
+- Pide la contraseña del </u>usuario al que se quiere cambiar</u>
+- Sesión interactiva o ejecutar un comando
+
+--------------------------------------------------------------------------------
+
+- [`su [options] [-] [user [argument...]]`][man-1-su]
+
+```bash
+$ su -
+$ su -l usuario
+$ su -s /bin/bash
+$ su -c "comando"
+```
+
+[man-1-su]: https://linux.die.net/man/1/su
+
+--------------------------------------------------------------------------------
+
+### `sudo`: <u>S</u>uper <u>U</u>ser <u>DO</u>
+
+- Permite elevar privilegios
+- Pide la <u>contraseña del usuario local</u>
+- Verifica la configuración en `/etc/sudoers`
+- Configuración especializada para restringir comandos
+
+--------------------------------------------------------------------------------
+
+- [`sudo -l [-ABknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]`][man-8-sudo]
+
+```bash
+$ sudo -k
+$ sudo -l [-U usuario]
+$ sudo -i [-U usuario]
+$ sudo -s [-U usuario]
+$ SHELL=/bin/sh sudo -s [-U usuario]
+$ sudo [-u usuario] comando argumentos
+```
+
+[man-8-sudo]: https://linux.die.net/man/8/sudo
+
+--------------------------------------------------------------------------------
+
+### `/etc/sudoers`
+
+- Permite dar una configuración granular de cuales comandos se permiten a qué usuarios
+- También usa los archivos en el directorio `/etc/sudoers.d`
+- Comúnmente se utiliza el grupo `sudo` para dar privilegios a los usuarios
+- Sintaxis: `Defaults`, `Alias` y reglas
+
+--------------------------------------------------------------------------------
+
+```bash
+root@debian:~# egrep -v '^#|^\s*$' /etc/sudoers
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+root		ALL=(ALL:ALL) ALL
+%sudo		ALL=(ALL:ALL) ALL
+@includedir /etc/sudoers.d
+```
+
+--------------------------------------------------------------------------------
+
+# Administración de paquetes
+
+--------------------------------------------------------------------------------
+
+### Debian: `dpkg`
+
+- Manejador de paquetes `deb`
+- Puedes instalar un programa con el paquete `deb`
+
+--------------------------------------------------------------------------------
+
+```bash
+root@debian:~# dpkg -l
+
+root@debian:~# dpkg -i paquete.deb
+```
+
+--------------------------------------------------------------------------------
+
+### Debian: `apt`
+
+- Similares: `apt-get`, `aptitude`, `apt`
+- Permite instalar _software_ en el sistema utilizando paquetes `deb`
+- Buscar paquetes: <https://packages.debian.org/>
+- Repositorios: `main`, `contrib`, `non-free`
+- Existen repositorios de terceros (ej, `virtualbox`)
+
+--------------------------------------------------------------------------------
+
+```bash
+root@debian:~# apt update
+root@debian:~# apt upgrade
+root@debian:~# apt dist-update
+
+root@debian:~# apt install apache2
+root@debian:~# apt remove nginx
+root@debian:~# apt purge apache2-doc
+```
+
+--------------------------------------------------------------------------------
+
+### FlatPak
+
+- &nbsp;
+
+--------------------------------------------------------------------------------

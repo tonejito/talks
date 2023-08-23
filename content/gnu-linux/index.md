@@ -18,6 +18,14 @@ lang: es-MX
 
 <!--	= ^ . ^ =	-->
 
+# Historia y código abierto
+
+--------------------------------------------------------------------------------
+
+## Historia de UNIX y Linux
+
+--------------------------------------------------------------------------------
+
 ### Historia de C y UNIX
 
 :::::::::::::: {.columns}
@@ -45,6 +53,7 @@ lang: es-MX
 
 ::: notes
 
+- <https://www.redhat.com/sysadmin/unix-linux-history>
 - <https://eylenburg.github.io/os_familytree.htm>
 - <https://commons.wikimedia.org/wiki/File:Unix_history-simple.svg>
 
@@ -55,20 +64,22 @@ lang: es-MX
 ### Historia de **MINIX**
 
 - **MINIX**: Andrew Tanenbaum
-- <https://www.linuxjournal.com/article/10754>
 - <https://minix3.org/>
+- <https://www.linuxjournal.com/article/10754>
 
 --------------------------------------------------------------------------------
 
 ### Historia de Linux
 
 - **Linux**: Linus Torvalds 1991
+- <https://www.linux.com/news/birth-linux-how-linux-got-started/>
 
 <img title="Tux, la mascota de Linux" src="img/Tux.svg" style="height: 5em; width: auto;" data-lazy-loaded="">
 
 ::: notes
 
-- <https://www.linuxjournal.com/article/10754>
+- <https://www.linux.com/news/birth-linux-how-linux-got-started/>
+- <https://www.oreilly.com/library/view/running-linux-third/156592469X/ch01s02.html>
 - <https://commons.wikimedia.org/wiki/File:Tux.svg>
 
 :::
@@ -77,7 +88,7 @@ lang: es-MX
 
 ### GNU/Linux
 
-- Linux solo es el núcleo del sistema
+- Linux sólo es el núcleo del sistema
 - La mayoría de las veces se acompaña de las utilerías del proyecto GNU
 - Por eso se le llama `GNU/Linux`
 
@@ -108,6 +119,10 @@ lang: es-MX
 - Debian / Ubuntu
 - Enterprise Linux: Red Hat, CentOS, Rocky Linux, Alma Linux, Oracle Linux
 - SUSE / OpenSUSE
+
+--------------------------------------------------------------------------------
+
+## Código abierto y licenciamiento
 
 --------------------------------------------------------------------------------
 
@@ -166,7 +181,11 @@ _«Free as in **freedom**»_
 
 --------------------------------------------------------------------------------
 
-# Línea de comandos
+# Introducción a GNU/Linux
+
+--------------------------------------------------------------------------------
+
+## Intérprete de comandos
 
 --------------------------------------------------------------------------------
 
@@ -182,6 +201,17 @@ _«Free as in **freedom**»_
 
 --------------------------------------------------------------------------------
 
+### Otras funcionalidades del `shell`
+
+| Comando o atajo 	| Función |
+|:---------------------:|:--------|
+| `history`		| Historial de comandos
+| `Crtl+R`		| Búsqueda en el historial
+| `Ctrl+A` / `Ctrl+E`	| Movimiento al principio/final
+| `Ctrl+⬅️` / `Ctrl+➡️`	| Movimiento por palabras
+
+--------------------------------------------------------------------------------
+
 ### Configuración del `shell`
 
 - Archivo de configuración en el directorio `HOME` del usuario: `~/.bashrc`
@@ -191,6 +221,29 @@ _«Free as in **freedom**»_
     - Comandos, funciones y rutinas
     - Aliases
     - Variables de entorno (`export`, `unset`)
+
+--------------------------------------------------------------------------------
+
+### _Scripts_ de `shell`
+
+```
+#!/usr/bin/env bash
+
+set -vx
+
+echo "Creando directorios"
+for NAME in uno dos tres
+do
+  mkdir -vp directorios/${NAME}
+done
+
+echo "Árbol de directorios creados"
+tree directorios
+```
+
+--------------------------------------------------------------------------------
+
+## Ayuda en la línea de comandos
 
 --------------------------------------------------------------------------------
 
@@ -208,15 +261,31 @@ _«Free as in **freedom**»_
 ### ¿Cómo identificar el la distribución de GNU/Linux?
 
 - Versión del _kernel_: `uname -a`
-- Línea de comandos del _kernel_:
-    - `cat /proc/cmdline`
+- Línea de comandos del _kernel_: `/proc/cmdline`
 - Distribución:
-    - `cat /etc/os-release /etc/debian_version /etc/redhat-release`
+    - `/etc/os-release`
+    - `/etc/debian_version`
+    - `/etc/redhat-release`
     - `lsb_release -a`
 
 ::: notes
 
 :::
+
+--------------------------------------------------------------------------------
+
+## Sistema de archivos
+
+--------------------------------------------------------------------------------
+
+### Tipos de sistemas de archivos
+
+- ext2, ext3, ext4
+- XFS
+- btrfs
+- FAT, exFAT
+- NTFS
+- NFS, SMB
 
 --------------------------------------------------------------------------------
 
@@ -267,36 +336,261 @@ _«Free as in **freedom**»_
 
 --------------------------------------------------------------------------------
 
+### Tipos de archivo
+
+|     |
+|:---:|:--|
+| `-` | Archivo
+| `d` | Directorio
+| `l` | Liga simbólica
+| `b` | Dispositivo de bloques
+| `c` | Dispositivo de caracteres
+| `p` | FIFO (_named pipe_)
+| `s` | Socket
+
+--------------------------------------------------------------------------------
+
+### Manejo de archivos
+
+- Los sistemas de archivos distinguen entre mayúsculas y minúsculas
+    - ext2, ext3, ext4, xfs, btrfs, reiserfs, etc.
+
+- Algunos otros sistemas de archivos no tienen esta distinción
+    - FAT, exFAT, NTFS, HFS`*`, HFS+`*`, APFS`*`
+
+::: notes
+
+- HFS, HFS+ y APFS pueden ser configurados para distinguir entre mayúsulas y minúsculas
+
+:::
+
+--------------------------------------------------------------------------------
+
 ### Administración de archivos
 
-- Tipos de archivo
-- Creación de directorios
-- Creación de archivos
+- Crear archivos vacíos
+
+```bash
+$ touch archivo
+
+$ printf "" > archivo
+
+$ echo "Hola mundo" > archivo
+
+$ truncate --size=0 > archivo
+```
+
+--------------------------------------------------------------------------------
+
+### Administración de archivos
+
+- Crear y borrar directorios
+
+```bash
+$ mkdir directorio
+mkdir: created directory 'directorio'
+
+$ mkdir -p folder/subfolder
+mkdir: created directory 'folder'
+mkdir: created directory 'folder/subfolder'
+
+$ rmdir -v directorio
+rmdir: removing directory 'directorio'
+
+$ rm -vrf folder/
+removed directory 'folder/subfolder'
+removed directory 'folder/'
+```
+
+--------------------------------------------------------------------------------
+
+### Administración de archivos
+
 - Renombrar y mover archivos
-- Renombrar y mover directorios
-- Permisos en archivos
+
+```bash
+$ mv -v archivo mi-archivo
+renamed 'archivo' -> 'mi-archivo'
+
+$ mv -v mi-archivo folder/
+renamed 'mi-archivo' -> 'folder/mi-archivo'
+
+$ mv -v folder/mi-archivo folder/subfolder/otro-archivo
+renamed 'folder/mi-archivo' -> 'folder/subfolder/otro-archivo'
+```
 
 --------------------------------------------------------------------------------
 
 ### Administración de archivos
 
-- Ligas simbólicas
+- Renombrar y mover directorios
+
+```bash
+$ mv -v directorio mi-directorio
+renamed 'directorio' -> 'mi-directorio'
+
+$ mv -v mi-directorio folder/
+renamed 'mi-directorio' -> 'folder/mi-directorio'
+
+$ mv -v folder/mi-directorio folder/subfolder/otro-directorio
+renamed 'folder/mi-directorio' -> 'folder/subfolder/otro-directorio'
+```
+
+--------------------------------------------------------------------------------
+
+### Administración de archivos
+
+```bash
+$ tree folder/
+folder/
+└── subfolder/
+    ├── otro-archivo
+    └── otro-directorio/
+```
+
+--------------------------------------------------------------------------------
+
+### Administración de archivos
+
 - Ligas duras
+- Ligas simbólicas
 
 --------------------------------------------------------------------------------
 
-### Otras funcionalidades del `shell`
+### Ligas duras
 
-| Comando o atajo 	| Función |
-|:---------------------:|:--------|
-| `history`		| Historial de comandos
-| `Crtl+R`		| Búsqueda en el historial
-| `Ctrl+A` / `Ctrl+E`	| Movimiento al principio/final
-| `Ctrl+⬅️` / `Ctrl+➡️`	| Movimiento por palabras
+- Agrega "otra liga" al archivo
+- Otra entrada en el directorio que apunta al inodo del archivo original
+    - Attributo `n-links` en `ls`
+- Si se borra una liga dura, el archivo sigue ahí
+    - El archivo desaparece hasta que se borren todas las ligas que apuntan a el
+- Válido en el mismo sistema de archivos
+- No todos los sistemas de archivos lo soportan (FAT, exFAT, etc.)
 
 --------------------------------------------------------------------------------
 
-### _Scripts_ de `shell`
+El parámetro `n-links` aumenta con cada liga dura
+
+```bash
+$ touch archivo
+$ ls -l archivo
+-rw-r--r-- 1 tonejito users 0 Aug 23 02:21 archivo
+
+$ ln -v archivo liga-dura
+'liga-dura' => 'archivo'
+$ ls -l archivo liga-dura
+-rw-r--r-- 2 tonejito users 0 Aug 23 02:21 archivo
+-rw-r--r-- 2 tonejito users 0 Aug 23 02:21 liga-dura
+
+$ ln -v archivo otra-liga-dura
+'otra-liga-dura' => 'archivo'
+$ ls -l archivo liga-dura otra-liga-dura
+-rw-r--r-- 3 tonejito users 0 Aug 23 02:21 archivo
+-rw-r--r-- 3 tonejito users 0 Aug 23 02:21 liga-dura
+-rw-r--r-- 3 tonejito users 0 Aug 23 02:21 otra-liga-dura
+```
+
+--------------------------------------------------------------------------------
+
+### Ligas simbólicas
+
+- Archivo especial de tipo "liga simbólica"
+- Contiene la ruta de destino (absoluta o relativa)
+- Válido en el mismo sistema de archivos o entre diferentes sistemas de archivos
+- No todos los sistemas de archivos lo soportan (FAT, exFAT, etc.)
+
+--------------------------------------------------------------------------------
+
+#### Crear una liga simbólica
+
+```bash
+$ touch 1-mi-archivo
+$ ls -l
+-rw-r--r-- 1 tonejito users 0 Aug 23 02:32 1-mi-archivo
+
+$ ln -vs 1-mi-archivo 2-mi-liga-simbolica
+'2-mi-liga-simbolica' -> '1-mi-archivo'
+$ ls -l
+-rw-r--r-- 1 tonejito users  0 Aug 23 02:32 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 12 Aug 23 02:33 2-mi-liga-simbolica -> 1-mi-archivo	⬅️
+```
+
+--------------------------------------------------------------------------------
+
+#### Crear otra liga simbólica
+
+```bash
+$ ln -vs 1-mi-archivo 3-otra-liga-simbolica
+'3-otra-liga-simbolica' -> '1-mi-archivo'
+$ ls -l
+-rw-r--r-- 1 tonejito users  0 Aug 23 02:32 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 12 Aug 23 02:33 2-mi-liga-simbolica -> 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 12 Aug 23 02:33 3-otra-liga-simbolica -> 1-mi-archivo	⬅️
+```
+
+--------------------------------------------------------------------------------
+
+#### Crear una liga simbólica a otra liga simbólica
+
+```bash
+$ ln -vs 2-mi-liga-simbolica 4-liga-a-otra-liga
+'4-liga-a-otra-liga' -> '2-mi-liga-simbolica'
+$ ls -l
+-rw-r--r-- 1 tonejito users  0 Aug 23 02:32 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 12 Aug 23 02:33 2-mi-liga-simbolica -> 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 12 Aug 23 02:33 3-otra-liga-simbolica -> 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 19 Aug 23 02:33 4-liga-a-otra-liga -> 2-mi-liga-simbolica	⬅️
+```
+
+--------------------------------------------------------------------------------
+
+#### Crear una liga simbólica rota
+
+```bash
+$ ln -vs no-existe 5-liga-simbolica-rota
+'5-liga-simbolica-rota' -> 'no-existe'
+$ ls -l
+-rw-r--r-- 1 tonejito users  0 Aug 23 02:32 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 12 Aug 23 02:33 2-mi-liga-simbolica -> 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 12 Aug 23 02:33 3-otra-liga-simbolica -> 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 19 Aug 23 02:33 4-liga-a-otra-liga -> 2-mi-liga-simbolica
+lrwxrwxrwx 1 tonejito users  9 Aug 23 02:34 5-liga-simbolica-rota -> no-existe	⬅️
+```
+
+--------------------------------------------------------------------------------
+
+#### Crear una liga simbólica a si misma
+
+También llamada "liga circular"
+
+```bash
+$ ln -vs 6-liga-circular 6-liga-circular
+'6-liga-circular' -> '6-liga-circular'
+$ ls -l
+-rw-r--r-- 1 tonejito users  0 Aug 23 02:32 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 12 Aug 23 02:33 2-mi-liga-simbolica -> 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 12 Aug 23 02:33 3-otra-liga-simbolica -> 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 19 Aug 23 02:33 4-liga-a-otra-liga -> 2-mi-liga-simbolica
+lrwxrwxrwx 1 tonejito users  9 Aug 23 02:34 5-liga-simbolica-rota -> no-existe
+lrwxrwxrwx 1 tonejito users 15 Aug 23 02:34 6-liga-circular -> 6-liga-circular	⬅️
+```
+
+--------------------------------------------------------------------------------
+
+#### Crear una liga dura a una liga simbólica
+
+```bash
+$ ln -v 2-mi-liga-simbolica 7-liga-dura-a-liga-simbolica
+'7-liga-dura-a-liga-simbolica' => '2-mi-liga-simbolica'
+$ ls -l
+-rw-r--r-- 1 tonejito users  0 Aug 23 02:32 1-mi-archivo
+lrwxrwxrwx 2 tonejito users 12 Aug 23 02:33 2-mi-liga-simbolica -> 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 12 Aug 23 02:33 3-otra-liga-simbolica -> 1-mi-archivo
+lrwxrwxrwx 1 tonejito users 19 Aug 23 02:33 4-liga-a-otra-liga -> 2-mi-liga-simbolica
+lrwxrwxrwx 1 tonejito users  9 Aug 23 02:34 5-liga-simbolica-rota -> no-existe
+lrwxrwxrwx 1 tonejito users 15 Aug 23 02:34 6-liga-circular -> 6-liga-circular
+lrwxrwxrwx 2 tonejito users 12 Aug 23 02:33 7-liga-dura-a-liga-simbolica -> 1-mi-archivo	⬅️
+```
 
 --------------------------------------------------------------------------------
 
@@ -346,23 +640,15 @@ set mouse=
 
 --------------------------------------------------------------------------------
 
-# Privilegios de usuario
+# Permisos y privilegios
 
 --------------------------------------------------------------------------------
 
-### Tipos de usuario
-
-| Tipo | Identificador | Descripción
-|:-----|:-------------:|:-----------|
-| Normal	| `$`	| Usuario normal del equipo
-| Sistema	| `​`	| Asociado a servicios del sistema `*`
-| Súper-usuario	| `#`	| Administrador del sistema
-
-`*` Los usuarios del sistema NO pueden iniciar sesión en el equipo
+## Permisos del sistema de archivos
 
 --------------------------------------------------------------------------------
 
-### Permisos del sistema de archivos
+### Permisos de archivos y directorios
 
 <div style="font-size: 0.9em; text-align: center;">
 `-rw-r-----	tonejito:staff	archivo.txt`
@@ -400,6 +686,69 @@ Change: 2023-08-19 23:58:59.920000000 -0600
 
 --------------------------------------------------------------------------------
 
+### Permisos de lectura: `r`
+
+<div style="font-size: 0.7em;">
+| Modo simbólico | Modo Octal <br/> `ugo`	| Permisos Dueño <br/> `u`	| Permisos Grupo <br/> `g`	| Permisos Otros <br/> `o`
+|:--------------:|:----------------------------:|:-----------------------------:|:-----------------------------:|:-----------------------:|
+| `---------`	 | 000				| `000`				| `000`				| `000`
+| `r--------`	 | 400				| **1**`00`			| `000`				| `000`
+| `r--r-----`	 | 440				| **1**`00`			| **1**`00`			| `000`
+| `r--r--r--`	 | 444				| **1**`00`			| **1**`00`			| **1**`00`
+| Representación | **Octal** <br/> `ugo`	| **Bits** <br/> `rwx`		| **Bits** <br/> `rwx`		| **Bits** <br/> `rwx`
+</div>
+
+--------------------------------------------------------------------------------
+
+### Permisos de escritura: `w`
+
+<div style="font-size: 0.7em;">
+| Modo simbólico | Modo Octal <br/> `ugo`	| Permisos Dueño <br/> `u`	| Permisos Grupo <br/> `g`	| Permisos Otros <br/> `o`
+|:--------------:|:----------------------------:|:-----------------------------:|:-----------------------------:|:-----------------------:|
+| `rw-------`	 | 600				| **11**`0`			| `000`				| `000`
+| `rw-r-----`	 | 640				| **11**`0`			| **1**`00`			| `000`
+| `rw-r--r--`	 | 644				| **11**`0`			| **1**`00`			| **1**`00`
+| `rw-rw-r--`	 | 664				| **11**`0`			| **11**`0`			| **1**`00`
+| `rw-rw-rw-`	 | 666				| **11**`0`			| **11**`0`			| **11**`0`
+| Representación | **Octal** <br/> `ugo`	| **Bits** <br/> `rwx`		| **Bits** <br/> `rwx`		| **Bits** <br/> `rwx`
+</div>
+
+--------------------------------------------------------------------------------
+
+### Permisos de ejecución: `x`
+
+- `x`: Ejecución **(archivos**)
+- `x`: Listar (**directorios**)
+
+<div style="font-size: 0.7em;">
+| Modo simbólico | Modo Octal <br/> `ugo`	| Permisos Dueño <br/> `u`	| Permisos Grupo <br/> `g`	| Permisos Otros <br/> `o`
+|:--------------:|:----------------------------:|:-----------------------------:|:-----------------------------:|:-----------------------:|
+| `rwx------`	 | 700				| **111**			| `000`				| `000`
+| `rwxr-x---`	 | 750				| **111**			| **11**`0`			| `000`
+| `rwxr-xr-x`	 | 755				| **111**			| **11**`0`			| **11**`0`
+| `rwxrwxr-x`	 | 775				| **111**			| **111**			| **11**`0`
+| `rwxrwxrwx`	 | 777				| **111**			| **111**			| **111**
+| Representación | **Octal** <br/> `ugo`	| **Bits** <br/> `rwx`		| **Bits** <br/> `rwx`		| **Bits** <br/> `rwx`
+</div>
+
+--------------------------------------------------------------------------------
+
+## Privilegios de usuario
+
+--------------------------------------------------------------------------------
+
+### Tipos de usuario
+
+| Tipo | Identificador | Descripción
+|:-----|:-------------:|:-----------|
+| Normal	| `$`	| Usuario normal del equipo
+| Sistema	| ` `	| Asociado a servicios del sistema `*`
+| Súper-usuario	| `#`	| Administrador del sistema
+
+`*` Los usuarios del sistema NO pueden iniciar sesión en el equipo
+
+--------------------------------------------------------------------------------
+
 ### `su`: <u>S</u>witch <u>U</u>ser
 
 - Permite cambiar de usuario
@@ -408,13 +757,15 @@ Change: 2023-08-19 23:58:59.920000000 -0600
 
 --------------------------------------------------------------------------------
 
+### man 1 su
+
 - [`su [options] [-] [user [argument...]]`][man-1-su]
 
 ```bash
-$ su -
-$ su -l usuario
-$ su -s /bin/bash
-$ su -c "comando"
+tonejito@debian:~$ su -
+tonejito@debian:~$ su -l usuario
+tonejito@debian:~$ su -s /bin/bash
+tonejito@debian:~$ su -c "comando"
 ```
 
 [man-1-su]: https://linux.die.net/man/1/su
@@ -430,15 +781,17 @@ $ su -c "comando"
 
 --------------------------------------------------------------------------------
 
+### man 8 sudo
+
 - [`sudo -l [-ABknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]`][man-8-sudo]
 
 ```bash
-$ sudo -k
-$ sudo -l [-U usuario]
-$ sudo -i [-U usuario]
-$ sudo -s [-U usuario]
-$ SHELL=/bin/sh sudo -s [-U usuario]
-$ sudo [-u usuario] comando argumentos
+tonejito@debian:~$ sudo -k
+tonejito@debian:~$ sudo -l [-U usuario]
+tonejito@debian:~$ sudo -i [-U usuario]
+tonejito@debian:~$ sudo -s [-U usuario]
+tonejito@debian:~$ SHELL=/bin/sh sudo -s [-U usuario]
+tonejito@debian:~$ sudo [-u usuario] comando argumentos
 ```
 
 [man-8-sudo]: https://linux.die.net/man/8/sudo
@@ -479,7 +832,9 @@ root		ALL=(ALL:ALL) ALL
 
 ```bash
 root@debian:~# dpkg -l
+```
 
+```bash
 root@debian:~# dpkg -i paquete.deb
 ```
 
@@ -495,11 +850,15 @@ root@debian:~# dpkg -i paquete.deb
 
 --------------------------------------------------------------------------------
 
+### Administrar _software_ con APT
+
 ```bash
 root@debian:~# apt update
 root@debian:~# apt upgrade
 root@debian:~# apt dist-update
+```
 
+```bash
 root@debian:~# apt install apache2
 root@debian:~# apt remove nginx
 root@debian:~# apt purge apache2-doc
@@ -509,6 +868,51 @@ root@debian:~# apt purge apache2-doc
 
 ### FlatPak
 
-- &nbsp;
+- Permite instalar _software_ más reciente que el disponible en los repositorios de la distribución
+- El formato FlatPak sirve en casi cualquier distribución de GNU/Linux
+- El _software_ se distribuye a través de [`FlatHub`][flathub]
+
+[flathub]: https://flathub.org/setup
+
+--------------------------------------------------------------------------------
+
+### Instalar FlatPak en Debian
+
+```bash
+root@debian:~# apt install flatpak
+root@debian:~# apt install gnome-software-plugin-flatpak
+```
+
+```bash
+root@debian:~# flatpak remote-add --if-not-exists flathub \
+               https://dl.flathub.org/repo/flathub.flatpakrepo
+```
+
+```
+root@debian:~# reboot
+```
+
+--------------------------------------------------------------------------------
+
+### Instalar y ejecutar _software_ con FlatPak
+
+- <https://flathub.org/apps/search>
+
+```bash
+tonejito@debian:~$ flatpak install flathub org.mozilla.firefox
+```
+
+```bash
+tonejito@debian:~$ flatpak run org.mozilla.firefox
+```
+
+--------------------------------------------------------------------------------
+
+# Servicios del sistema
+
+--------------------------------------------------------------------------------
+
+### SystemD
+
 
 --------------------------------------------------------------------------------

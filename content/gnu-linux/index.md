@@ -912,7 +912,44 @@ tonejito@debian:~$ flatpak run org.mozilla.firefox
 
 --------------------------------------------------------------------------------
 
+## SystemD
+
+--------------------------------------------------------------------------------
+
 ### SystemD
 
+- Maneja el inicio de los servicios en al mayoría de las distribuciones modernas de GNU/Linux
+- Se ejecuta un demonio central llamado `systemd` con PID 1
+- Cada elemento administrado por SystemD se define en un _unit file_
+- Los _unit files_ se encuentran en `/lib/systemd/system` o `/etc/systemd/system`
+- Se administra con el comando `systemctl`
+
+--------------------------------------------------------------------------------
+
+```
+# systemctl reboot
+# systemctl daemon-reload
+# systemctl list-units
+# systemctl status|is-active <unit>
+# systemctl start|stop|restart <unit>
+# systemctl enable|disable <unit>
+```
+
+--------------------------------------------------------------------------------
+
+### SystemD
+
+- Units:
+
+    - Service
+    - Timer
+    - Mount
+    - Device
+
+- Se utiliza `journalctl` para acceder a las bitácoras generadas por SystemD
+
+```
+# journalctl -xe
+```
 
 --------------------------------------------------------------------------------

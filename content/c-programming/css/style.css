@@ -1,0 +1,11 @@
+/*	style.css	*/
+
+.subtitle
+{
+  font-family: "Ubuntu Mono", "Courier New", monospace !important;
+}
+
+table
+{
+  font-size: 0.75em;
+}

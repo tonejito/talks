@@ -44,11 +44,6 @@ Debian, Ubuntu, Mint, ...
 ```bash
 root@debian:~# apt install build-essential automake
 	...
-root@debian:~# which cc make autoconf automake
-/usr/bin/cc
-/usr/bin/make
-/usr/bin/autoconf
-/usr/bin/automake
 ```
 
 Red Hat, CentOS, Rocky, Alma, Oracle, ...
@@ -56,9 +51,6 @@ Red Hat, CentOS, Rocky, Alma, Oracle, ...
 ```bash
 [root@rocky ~]# dnf groupinstall 'Development Tools'
 	...
-[root@rocky ~]# which cc make
-/usr/bin/cc
-/usr/bin/make
 ```
 
 --------------------------------------------------------------------------------
@@ -81,12 +73,59 @@ autoconf: /usr/bin/autoconf /usr/share/autoconf /usr/share/man/man1/autoconf.1.g
 automake: /usr/bin/automake /usr/share/man/man1/automake.1.gz
 ```
 
+--------------------------------------------------------------------------------
+
+### Prueba del compilador de C
+
+[Descargar código fuente `amhello-0.1`][amhello-0.1]
+
+[![](img/001-download-example-source.png "Descargar código fuente")][amhello-0.1]
+
+[amhello-0.1]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/codigo-ejemplo/-/tree/master/amhello/amhello-0.1?ref_type=heads
 
 --------------------------------------------------------------------------------
 
 ### Prueba del compilador de C
 
-Descargar código fuente
+Extraer código fuente
+
+```bash
+$ tar -xvf amhello-0.1.tar.gz
+	...
+```
+
+Cambiar al directorio `amhello-0.1`
+
+```bash
+$ cd amhello-0.1
+```
+
+--------------------------------------------------------------------------------
+
+### Prueba del compilador de C
+
+Ejecutar `make`
+
+```bash
+$ make
+########	hello	########
+gcc -g -O2 -o hello hello.c
+file hello
+hello: ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=ab18e89297796f8c0e47e5cff913d94106070243, for GNU/Linux 3.7.0, with debug_info, not stripped
+```
+
+--------------------------------------------------------------------------------
+
+### Ejecutar el binario
+
+```bash
+$ ./hello
+Hello world
+```
+
+--------------------------------------------------------------------------------
+
+# Código en lenguaje `C`
 
 --------------------------------------------------------------------------------
 

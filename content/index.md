@@ -18,3 +18,4 @@ lang: es-MX
 | [Tareas en `git`](tareas-git) | Abril 2023
 | [Introducción a GNU/Linux](gnu-linux) | Agosto 2023
 | [Programación en C](c-programming) | Agosto 2023
+| [Flujo de trabajo para entrega de actividades](workflow) | Septiembre 2023

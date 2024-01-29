@@ -19,3 +19,4 @@ lang: es-MX
 | [Introducción a GNU/Linux](gnu-linux) | Agosto 2023
 | [Programación en C](c-programming) | Agosto 2023
 | [Flujo de trabajo para entrega de actividades](workflow) | Septiembre 2023
+| [Presentación: Sistemas Operativos](sistemas-operativos) | Enero 2024

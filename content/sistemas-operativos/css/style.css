@@ -1,0 +1,30 @@
+/*	style.css	*/
+
+ol li::marker {
+  color:limegreen;
+}
+
+ul li::marker {
+  color:limegreen;
+}
+
+.header {
+  color: greenyellow;
+}
+
+.subtitle
+{
+  color: olivedrab;
+  font-style: italic !important;
+}
+
+.note
+{
+  font-size: xx-large;
+  font-style: italic;
+}
+
+.red
+{
+  color: red;
+}

@@ -61,6 +61,20 @@ lang: es-MX
 
 --------------------------------------------------------------------------------
 
+### UNIX
+Hereda código de alguna de las versiones directamente derivadas
+
+- BSD, AIX, HP-UX, etc.
+
+<hr/>
+
+### _UNIX-like_
+Implementa los mismos conceptos con código propio
+
+- MINIX y Linux
+
+--------------------------------------------------------------------------------
+
 ### Historia de **MINIX**
 
 - **MINIX**: Andrew Tanenbaum
@@ -186,6 +200,12 @@ _«Free as in **freedom**»_
 --------------------------------------------------------------------------------
 
 ## Intérprete de comandos
+
+--------------------------------------------------------------------------------
+
+### Intérprete de comandos
+
+[![](img/hardware-kernel-userspace-shell-x11.png "Hardware - Kernel - Shell")](img/hardware-kernel-userspace-shell-x11.png)
 
 --------------------------------------------------------------------------------
 
@@ -368,7 +388,7 @@ tree directorios
 
 ### Administración de archivos
 
-- Crear archivos vacíos
+Crear archivos vacíos
 
 ```bash
 $ touch archivo
@@ -384,7 +404,7 @@ $ truncate --size=0 > archivo
 
 ### Administración de archivos
 
-- Crear y borrar directorios
+Crear y borrar directorios
 
 ```bash
 $ mkdir directorio
@@ -406,7 +426,7 @@ removed directory 'folder/'
 
 ### Administración de archivos
 
-- Renombrar y mover archivos
+Renombrar y mover archivos
 
 ```bash
 $ mv -v archivo mi-archivo
@@ -423,7 +443,7 @@ renamed 'folder/mi-archivo' -> 'folder/subfolder/otro-archivo'
 
 ### Administración de archivos
 
-- Renombrar y mover directorios
+Renombrar y mover directorios
 
 ```bash
 $ mv -v directorio mi-directorio

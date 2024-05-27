@@ -1,0 +1,17 @@
+.subtitle
+{
+  font-style: italic;
+}
+
+.left
+{
+  text-align: left;
+}
+
+.blink
+{
+  /* animation: blinker 1s step-start infinite; */
+  animation: blinker 2s ease-in-out infinite alternate;
+}
+
+@keyframes blinker { to { opacity: 0; } }

@@ -20,8 +20,10 @@ ul li::marker {
 
 .note
 {
-  font-size: xx-large;
+  font-size: x-large;
   font-style: italic;
+  /* padding: 1px; */
+  background: dimgray;
 }
 
 .red

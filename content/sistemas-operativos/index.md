@@ -4,7 +4,7 @@ subtitle: "Lost children will be taught the C programming language"
 author:
 - José Luis Torres
 - Andrés Hernández
-date: 2024-2
+date: 2025-1
 affiliation:
 - https://SistemasOperativos-Ciencias-UNAM.gitlab.io/
 abstract: |
@@ -23,7 +23,7 @@ lang: es-MX
 
 Sistemas Operativos, Facultad de Ciencias, UNAM
 
-Semestre 2024-2
+Semestre 2025-1
 
 - José Luis Torres Rodríguez
 - Andrés Leonardo Hernández Bermúdez
@@ -95,12 +95,12 @@ Semestre 2024-2
 - Videos pre-grabados en el [canal de YouTube][youtube] de la materia
 -->
 
-- Martes y jueves de 17:00 a 18:30 hrs. [Salón `O125`][salon-O125]
+- Martes y jueves de 17:00 a 18:30 hrs. [Salón `O124`][salon-O124]
 
 **Ayudante**
 
 - Videos pre-grabados en el [canal de YouTube][youtube] de la materia
-- Lunes y miércoles de 16:00 a 17:00 hrs. [Salón `O125`][salon-O125]
+- Lunes y miércoles de 16:00 a 17:00 hrs. [Salón `O124`][salon-O124]
 
 <!--
 **Sesión de dudas**
@@ -108,6 +108,12 @@ Semestre 2024-2
 - Jueves de 17:00 a 18:30 horas [a través de Google Meet][google-meet]
 - Para resolver las dudas existentes sobre los temas y materiales entregados a lo largo de la semana
 -->
+
+--------------------------------------------------------------------------------
+
+<div class="note" style="font-size:larger;">
+**NOTA**: Algunas sesiones de teoría y laboratorio serán impartidas via [zoom]
+</div>
 
 --------------------------------------------------------------------------------
 
@@ -156,8 +162,21 @@ Lunes de 12:00 a 14:00 hrs. [Taller de Sistemas Operativos, Redes de Cómputo, S
 ## Recursos de cómputo (cont.)
 
 - Se compartirán recursos adicionales a la cuenta de correo institucional `@ciencias` en caso de ser requerido
-- [Google Meet][google-meet] o [Zoom][zoom] para las sesiones de dudas
+- [Zoom][zoom] para las sesiones de dudas
 - [Canal de Youtube][youtube] para la publicación de videos sobre el curso
+<!-- - [Google Meet][google-meet] o  -->
+
+--------------------------------------------------------------------------------
+
+#### Calendario FCiencias
+
+[![](img/calendario-fciencias.png)][calendario-fciencias-academicos]
+
+--------------------------------------------------------------------------------
+
+#### Calendario UNAM
+
+[![](img/semestral2025.jpg)][calendario-dgae]
 
 --------------------------------------------------------------------------------
 
@@ -318,10 +337,14 @@ Se aplicarán 4 exámenes, de acuerdo al avance que se tenga en el curso
 
 | Examen	| Fecha				|
 |--------------:|:------------------------------|
-| Parcial 1	| Jueves 22 de febrero de 2024
-| Parcial 2	| Jueves 21 de marzo   de 2024
-| Parcial 3	| Jueves 25 de abril   de 2024
-| Parcial 4	| Jueves 23 de mayo    de 2024
+| Parcial 1	| Martes 27 de agosto     de 2024
+| Parcial 2	| Martes 24 de septiembre de 2024
+| Parcial 3	| Martes 22 de octubre    de 2024
+| Parcial 4	| Martes 19 de noviembre  de 2024
+
+<div class="note">
+**NOTA**: Las fechas están sujetas a cambios
+</div>
 
 --------------------------------------------------------------------------------
 
@@ -368,7 +391,7 @@ Se aplicarán 4 exámenes, de acuerdo al avance que se tenga en el curso
 - Ligado y programa ejecutable
 - Bibliotecas estándar
 - Bibliotecas portables
-- Bibliotecas de terceros: curl, libssl
+- Bibliotecas de terceros: `curl`, `libssl`
 
 --------------------------------------------------------------------------------
 
@@ -469,33 +492,37 @@ Las participaciones que aporten ideas a la clase pueden ayudar a incrementar la 
 [laboratorio]: https://sistemasoperativos-ciencias-unam.gitlab.io/laboratorio/
 [pagina-curso]: https://SistemasOperativos-Ciencias-UNAM.gitlab.io/
 [grupo-gitlab]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/
-[lista]: https://tinyurl.com/ListaSO-2024-2
-[pizarron]: https://tinyurl.com/PizarronSO-2024-2
+[lista]: https://tinyurl.com/ListaSO-2025-1
+[pizarron]: https://tinyurl.com/PizarronSO-2025-1
 [telegram]: https://t.me/sistemasoperativos_ciencias_unam
 [temario]: http://www.fciencias.unam.mx/asignaturas/713.pdf
-[presentacion]: https://www.fciencias.unam.mx/docencia/horarios/presentacion/351787
-[detalles]: https://www.fciencias.unam.mx/docencia/horarios/detalles/351787
-[horarios-plan-1994]: http://www.fciencias.unam.mx/docencia/horarios/20242/218/713
-[horarios-plan-2013]: http://www.fciencias.unam.mx/docencia/horarios/20242/1556/713
+[presentacion]: https://www.fciencias.unam.mx/docencia/horarios/presentacion/356266
+[detalles]: https://www.fciencias.unam.mx/docencia/horarios/detalles/356266
+[horarios-plan-1994]: http://www.fciencias.unam.mx/docencia/horarios/20251/218/713
+[horarios-plan-2013]: http://www.fciencias.unam.mx/docencia/horarios/20251/1556/713
+[calendario-fciencias-estudiantes]: https://www.fciencias.unam.mx/estudiar-en-ciencias/calendario/estudiantes
+[calendario-fciencias-academicos]: https://www.fciencias.unam.mx/estudiar-en-ciencias/calendario/academicos
+[calendario-dgae]: https://www.dgae.unam.mx/calendarios_escolares.html
 
-[pagina-tareas]: https://sistemasoperativos-ciencias-unam.gitlab.io/2024-2/tareas-so
-[repositorio-tareas]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/2024-2/tareas-so
-[flujo-de-trabajo-tareas]: https://sistemasoperativos-ciencias-unam.gitlab.io/2024-2/tareas-so/workflow/
+[pagina-tareas]: https://sistemasoperativos-ciencias-unam.gitlab.io/2025-1/tareas-so
+[repositorio-tareas]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/2025-1/tareas-so
+[flujo-de-trabajo-tareas]: https://sistemasoperativos-ciencias-unam.gitlab.io/2025-1/tareas-so/workflow/
 
 <!-- -->
 [salon-Y303]: http://www.fciencias.unam.mx/plantel/horariosalon/20191/449 "Salón 303 de Yelizcalli"
-[salon-O125]: https://www.fciencias.unam.mx/plantel/detalle/36 "Salon 125 Edificio Oriente"
-[taller-Tlahuizcalpan]: http://www.fciencias.unam.mx/plantel/horariosalon/20221/258 "Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información"
+[salon-O124]: https://www.fciencias.unam.mx/plantel/detalle/35 "Salon O-124 Edificio Oriente"
+[taller-Tlahuizcalpan]: https://www.fciencias.unam.mx/plantel/detalle/258 "Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información"
+[taller-Tlahuizcalpan-horario]: https://www.fciencias.unam.mx/plantel/horariosalon/20251/258
 [sección de prácticas]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/
 <!-- -->
 
 [youtube]: https://tinyurl.com/SO-Ciencias-UNAM-YouTube
-[youtube-lista-2024-2]: https://www.youtube.com/playlist?list=PLa3Cxza-egQWixsZtom-qU_85A2QgjF5U
+[youtube-lista-2025-1]: https://www.youtube.com/playlist?list=PLa3Cxza-egQWixsZtom-qU_85A2QgjF5U
 [youtube-lista-temas]: https://www.youtube.com/playlist?list=PLa3Cxza-egQUMFXSpJKmfcAbq-KyYXn04
 [youtube-lista-complementarios]: https://www.youtube.com/playlist?list=PLa3Cxza-egQVpSyjKBereGXIi8NEVuvxA
 <!--
 [jitsi]: https://meet.jit.si/sistop-fciencias
--->
 [google-meet]: https://meet.google.com/xse-zahc-snk
-[google-drive]: https://drive.google.com/drive/folders/12UnqSHjYzTdHEB6_yCjv11pqYPKdj-FJ
-[zoom]: https://cuaieed-unam.zoom.us/j/83700504232
+-->
+[google-drive]: https://tinyurl.com/DriveSO-2025-1
+[zoom]: https://tinyurl.com/ZoomSO-2025-1

@@ -4,7 +4,7 @@ subtitle: "Lost children will be taught the C programming language"
 author:
 - José Luis Torres
 - Andrés Hernández
-date: 2025-1
+date: 2025-2
 affiliation:
 - https://SistemasOperativos-Ciencias-UNAM.gitlab.io/
 abstract: |
@@ -23,7 +23,7 @@ lang: es-MX
 
 Sistemas Operativos, Facultad de Ciencias, UNAM
 
-Semestre 2025-1
+Semestre 2025-2
 
 - José Luis Torres Rodríguez
 - Andrés Leonardo Hernández Bermúdez
@@ -35,11 +35,16 @@ Semestre 2025-1
 - Conocimientos básicos de GNU/Linux
 - Conocimientos de _arquitectura de computadoras_
 - Conocimientos de programación en un lenguaje _estructurado_ u _orientado a objetos_
-<!--
+
+--------------------------------------------------------------------------------
+
+## Requisitos (cont.)
+
 - No tener materias encimadas en el horario de _Sistemas Operativos_
 - Asistencia regular a clase
+<!-- -->
 - La asistencia a las sesiones de laboratorio es **obligatoria**
--->
+<!-- -->
 
 --------------------------------------------------------------------------------
 
@@ -91,29 +96,26 @@ Semestre 2025-1
 
 **Profesor**
 
-<!--
 - Videos pre-grabados en el [canal de YouTube][youtube] de la materia
--->
-
-- Martes y jueves de 17:00 a 18:30 hrs. [Salón `O124`][salon-O124]
+- Martes y jueves de 17:00 a 18:30 hrs via [Zoom][zoom]. <!-- [Salón `O124`][salon-O124] -->
 
 **Ayudante**
 
 - Videos pre-grabados en el [canal de YouTube][youtube] de la materia
-- Lunes y miércoles de 16:00 a 17:00 hrs. [Salón `O124`][salon-O124]
+- Lunes y miércoles de 16:00 a 17:00 hrs via [Zoom][zoom]. <!-- [Salón `O124`][salon-O124] -->
 
 <!--
 **Sesión de dudas**
 
 - Jueves de 17:00 a 18:30 horas [a través de Google Meet][google-meet]
 - Para resolver las dudas existentes sobre los temas y materiales entregados a lo largo de la semana
--->
 
 --------------------------------------------------------------------------------
 
 <div class="note" style="font-size:larger;">
-**NOTA**: Algunas sesiones de teoría y laboratorio serán impartidas via [zoom]
+**NOTA**: Algunas sesiones de teoría y laboratorio serán impartidas via [Google Meet][google-meet] o [Zoom][zoom]
 </div>
+-->
 
 --------------------------------------------------------------------------------
 
@@ -161,10 +163,10 @@ Lunes de 12:00 a 14:00 hrs. [Taller de Sistemas Operativos, Redes de Cómputo, S
 
 ## Recursos de cómputo (cont.)
 
-- Se compartirán recursos adicionales a la cuenta de correo institucional `@ciencias` en caso de ser requerido
-- [Zoom][zoom] para las sesiones de dudas
+Se compartirán recursos adicionales a la cuenta de correo institucional `@ciencias` en caso de ser requerido
+- [Google Meet][google-meet] o [Zoom][zoom] para las sesiones de dudas
+- Carpeta de [Google Drive][google-drive] para trabajo colaborativo y la entrega de algunas tareas
 - [Canal de Youtube][youtube] para la publicación de videos sobre el curso
-<!-- - [Google Meet][google-meet] o  -->
 
 --------------------------------------------------------------------------------
 
@@ -331,16 +333,16 @@ Se considerarán los siguientes elementos para llevar a cabo la evaluación:
 
 --------------------------------------------------------------------------------
 
-### Exámenes
+### Examenes
 
-Se aplicarán 4 exámenes, de acuerdo al avance que se tenga en el curso
+Se aplicarán 4 examenes, de acuerdo al avance que se tenga en el curso
 
-| Examen	| Fecha				|
-|--------------:|:------------------------------|
-| Parcial 1	| Martes 27 de agosto     de 2024
-| Parcial 2	| Martes 24 de septiembre de 2024
-| Parcial 3	| Martes 22 de octubre    de 2024
-| Parcial 4	| Martes 19 de noviembre  de 2024
+| Examen	| Fecha					|
+|--------------:|:--------------------------------------|
+| Parcial 1	| Jueves 20 de febrero		de 2025
+| Parcial 2	| Jueves 20 de marzo		de 2025
+| Parcial 3	| Jueves 24 de abril		de 2025
+| Parcial 4	| Jueves 22 de mayo		de 2025
 
 <div class="note">
 **NOTA**: Las fechas están sujetas a cambios
@@ -363,6 +365,8 @@ Se aplicarán 4 exámenes, de acuerdo al avance que se tenga en el curso
 - No es posible obtener una calificación aprobatoria si no se ha cumplido con la entrega de las prácticas asignadas durante el semestre
 
 <!--
+--------------------------------------------------------------------------------
+
 ### Exposiciones
 
 - Se propondrá una lista de temas a exponer "en equipo"
@@ -376,6 +380,8 @@ Se aplicarán 4 exámenes, de acuerdo al avance que se tenga en el curso
 - En estas tareas se aplicarán todos los conocimientos vistos a la fecha, complementados con material adicional
 
 <!--
+--------------------------------------------------------------------------------
+
 ### Participaciones en clase
 
 - Éstas son **OBLIGATORIAS** y son un elemento fundamental en la evaluación final
@@ -404,9 +410,10 @@ Se aplicarán 4 exámenes, de acuerdo al avance que se tenga en el curso
 
 ## Notas (cont.)
 
-- Las tareas y prácticas se deberán trabajar en equipo, se indicará la cantidad de integrantes que puede tener cada equipo
-    - El trabajo en equipo se evalua considerando la participación de todos los integrantes
-    - Se debe considerar que la forma de trabajo en equipo no es opcional, no se permitirá que los proyectos diseñados para llevarse a cabo de esta forma se trabajen de manera individual
+- Las tareas y prácticas se deberán trabajar **en equipo**, se indicará la cantidad de integrantes que puede tener cada equipo
+    - El trabajo <u>en equipo</u> se evalua considerando la participación de todos los integrante
+- Se debe considerar que la forma de trabajo en equipo **no es opcional**
+    - Las prácticas y proyectos están diseñados para llevarse a cabo en equipo, por lo que estos <u>no se pueden asignar de manera individual</u>
 
 --------------------------------------------------------------------------------
 
@@ -425,7 +432,7 @@ Se aplicarán 4 exámenes, de acuerdo al avance que se tenga en el curso
 
 - Sin excepción, no se aceptarán reclamaciones fuera de la fecha señalada en el punto anterior
 - Sin excepciones, no se permitirá renunciar a ninguna calificación
-- La calificación de NP sólo se asignará a quien no haya entregado ningún trabajo y no haya presentado ningún examen
+- La calificación de `NP` sólo se asignará a quien no haya entregado ningún trabajo y no haya presentado ningún examen
 
 --------------------------------------------------------------------------------
 
@@ -442,18 +449,16 @@ La calificación final se calculará en base a los siguientes porcentajes:
 
 | Elemento	|Valor
 |--------------:|:------|
-| Prácticas	| 40%
+| Prácticas	| 50%
 | Examenes	| 30%
+| Tareas	| 20%
+<!--
 | Proyectos	| 15%
-| Tareas	| 15%
+-->
 
 <div class="note">
 Las participaciones que aporten ideas a la clase pueden ayudar a incrementar la calificación final
 </div>
-
---------------------------------------------------------------------------------
-
-## Dudas u observaciones adicionales
 
 --------------------------------------------------------------------------------
 
@@ -489,40 +494,50 @@ Las participaciones que aporten ideas a la clase pueden ayudar a incrementar la 
 
 --------------------------------------------------------------------------------
 
+## Dudas u observaciones adicionales
+
+--------------------------------------------------------------------------------
+
 [laboratorio]: https://sistemasoperativos-ciencias-unam.gitlab.io/laboratorio/
 [pagina-curso]: https://SistemasOperativos-Ciencias-UNAM.gitlab.io/
 [grupo-gitlab]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/
-[lista]: https://tinyurl.com/ListaSO-2025-1
-[pizarron]: https://tinyurl.com/PizarronSO-2025-1
+[lista]: https://tinyurl.com/ListaSO-2025-2
+[pizarron]: https://tinyurl.com/PizarronSO-2025-2
 [telegram]: https://t.me/sistemasoperativos_ciencias_unam
 [temario]: http://www.fciencias.unam.mx/asignaturas/713.pdf
-[presentacion]: https://www.fciencias.unam.mx/docencia/horarios/presentacion/356266
-[detalles]: https://www.fciencias.unam.mx/docencia/horarios/detalles/356266
-[horarios-plan-1994]: http://www.fciencias.unam.mx/docencia/horarios/20251/218/713
-[horarios-plan-2013]: http://www.fciencias.unam.mx/docencia/horarios/20251/1556/713
+[presentacion]: https://www.fciencias.unam.mx/docencia/horarios/presentacion/360876
+[detalles]: https://www.fciencias.unam.mx/docencia/horarios/detalles/360876
+[horarios-plan-1994]: http://www.fciencias.unam.mx/docencia/horarios/20252/218/713
+[horarios-plan-2013]: http://www.fciencias.unam.mx/docencia/horarios/20252/1556/713
+[calendario]: ./curso/calendario
+[calendario-fciencias]: https://www.fciencias.unam.mx/estudiar-en-ciencias/calendario
 [calendario-fciencias-estudiantes]: https://www.fciencias.unam.mx/estudiar-en-ciencias/calendario/estudiantes
 [calendario-fciencias-academicos]: https://www.fciencias.unam.mx/estudiar-en-ciencias/calendario/academicos
 [calendario-dgae]: https://www.dgae.unam.mx/calendarios_escolares.html
+[calendario-dgae-semestral]: https://www.dgae.unam.mx/assets/images/semestral2025.jpg
+[calendario-fciencias-crop]: https://tonejito.github.io/talks/sistemas-operativos/img/calendario-fciencias.png
+[calendario-dgae-crop]: https://tonejito.github.io/talks/sistemas-operativos/img/semestral2025.jpg
 
-[pagina-tareas]: https://sistemasoperativos-ciencias-unam.gitlab.io/2025-1/tareas-so
-[repositorio-tareas]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/2025-1/tareas-so
-[flujo-de-trabajo-tareas]: https://sistemasoperativos-ciencias-unam.gitlab.io/2025-1/tareas-so/workflow/
+[pagina-tareas]: https://sistemasoperativos-ciencias-unam.gitlab.io/2025-2/tareas-so
+[repositorio-tareas]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/2025-2/tareas-so
+[flujo-de-trabajo]: ./workflow/
+[flujo-de-trabajo-mr]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/2025-2/tareas-so/-/merge_requests
+[flujo-de-trabajo-repo]: https://sistemasoperativos-ciencias-unam.gitlab.io/2025-2/tareas-so/workflow/
+[flujo-de-trabajo-tareas]: https://sistemasoperativos-ciencias-unam.gitlab.io/2025-2/tareas-so/workflow/
 
 <!-- -->
-[salon-Y303]: http://www.fciencias.unam.mx/plantel/horariosalon/20191/449 "Salón 303 de Yelizcalli"
+[salon-Y303]: http://www.fciencias.unam.mx/plantel/horariosalon/20252/449 "Salón 303 de Yelizcalli"
 [salon-O124]: https://www.fciencias.unam.mx/plantel/detalle/35 "Salon O-124 Edificio Oriente"
 [taller-Tlahuizcalpan]: https://www.fciencias.unam.mx/plantel/detalle/258 "Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información"
-[taller-Tlahuizcalpan-horario]: https://www.fciencias.unam.mx/plantel/horariosalon/20251/258
+[taller-Tlahuizcalpan-horario]: https://www.fciencias.unam.mx/plantel/horariosalon/20252/258
 [sección de prácticas]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/
 <!-- -->
 
 [youtube]: https://tinyurl.com/SO-Ciencias-UNAM-YouTube
-[youtube-lista-2025-1]: https://www.youtube.com/playlist?list=PLa3Cxza-egQWixsZtom-qU_85A2QgjF5U
-[youtube-lista-temas]: https://www.youtube.com/playlist?list=PLa3Cxza-egQUMFXSpJKmfcAbq-KyYXn04
-[youtube-lista-complementarios]: https://www.youtube.com/playlist?list=PLa3Cxza-egQVpSyjKBereGXIi8NEVuvxA
-<!--
+[youtube-lista-semestre]: https://tinyurl.com/SO-Ciencias-UNAM-YT-2025-2
+[youtube-lista-temas]: https://tinyurl.com/SO-Ciencias-UNAM-YT-temas
+[youtube-lista-complementarios]: https://tinyurl.com/SO-Ciencias-UNAM-YT-temascomp
 [jitsi]: https://meet.jit.si/sistop-fciencias
-[google-meet]: https://meet.google.com/xse-zahc-snk
--->
-[google-drive]: https://tinyurl.com/DriveSO-2025-1
-[zoom]: https://tinyurl.com/ZoomSO-2025-1
+[google-meet]: https://tinyurl.com/MeetSO-2025-2
+[google-drive]: https://tinyurl.com/DriveSO-2025-2
+[zoom]: https://tinyurl.com/ZoomSO-2025-2

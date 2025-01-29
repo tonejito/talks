@@ -3,7 +3,7 @@ title: Flujo de trabajo para entrega de actividades
 subtitle: commit, push, merge request, repeat
 author:
 - Andrés Hernández - `tonejito`
-date: Septiembre 2023
+date: Enero 2025
 affiliation:
 - http://localhost/
 abstract: |

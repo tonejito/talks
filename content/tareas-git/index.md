@@ -3,7 +3,7 @@ title: Tareas en GIT
 subtitle: add, commit, push, repeat.
 author:
 - Andrés Hernández - `tonejito`
-date: 21 de Abril de 2023
+date: Enero 2025
 affiliation:
 - http://localhost/
 abstract: |

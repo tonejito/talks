@@ -15,9 +15,14 @@ lang: es-MX
 
 |	|	|
 |:------|:------|
-| [Tareas en `git`](tareas-git) | Abril 2023
-| [Introducción a GNU/Linux](gnu-linux) | Agosto 2023
-| [Programación en C](c-programming) | Agosto 2023
-| [Flujo de trabajo para entrega de actividades](workflow) | Septiembre 2023
 | [Sitios web con WordPress](wordpress) | Mayo 2024
-| [Presentación: Sistemas Operativos](sistemas-operativos) | Agosto 2024
+
+--------------------------------------------------------------------------------
+
+|	|	|
+|:------|:------|
+| [Presentación: Sistemas Operativos](sistemas-operativos) | Enero 2025
+| [Tareas en `git`](tareas-git) | Enero 2025
+| [Introducción a GNU/Linux](gnu-linux) | Febrero 2025
+| [Programación en C](c-programming) | Febrero 2025
+| [Flujo de trabajo para entrega de actividades](workflow) | Febrero 2025

@@ -12,7 +12,7 @@ PANDOC_FLAGS=--defaults ${PANDOC_CFG}
 
 DIRS=$(shell find ${CONTENT_DIR} -mindepth 1 -maxdepth 1 -type d \( ! -name '.*' \) -print | awk -F / '{print $$(NF)}')
 
-default:	index build list
+default:	index build patch list
 
 all:	default serve
 
@@ -31,6 +31,9 @@ build:
 	  test -d ${PUBLIC_DIR}/$${DIR} || mkdir -vp ${PUBLIC_DIR}/$${DIR} ; \
 	  $(MAKE) -f ../Makefile.content -C ${CONTENT_DIR}/$${DIR} ; \
 	done ;
+
+patch:
+	find ${PUBLIC_DIR} -iname '*.html' -exec sed -i'' -e 's|4//|4/|g' {} +
 
 list:
 	# find ${PUBLIC_DIR} -mindepth 1 -maxdepth 2 -type f \( ! -name '.*' \) -print

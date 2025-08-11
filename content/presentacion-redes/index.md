@@ -1,12 +1,12 @@
 ---
-title: Sistemas Operativos
-subtitle: "Lost children will be taught the C programming language"
+title: Redes de Computadoras
+subtitle: "White-Orange, Orange, White-Green, Blue, White-Blue, Green, White-Brown, Brown"
 author:
 - José Luis Torres
 - Andrés Hernández
-date: 2025-2
+date: 2026-1
 affiliation:
-- https://SistemasOperativos-Ciencias-UNAM.gitlab.io/
+- https://Redes-Ciencias-UNAM.gitlab.io/
 abstract: |
   Sistemas Operativos
 description: |
@@ -23,7 +23,7 @@ lang: es-MX
 
 Sistemas Operativos, Facultad de Ciencias, UNAM
 
-Semestre 2025-2
+Semestre 2026-1
 
 - José Luis Torres Rodríguez
 - Andrés Leonardo Hernández Bermúdez
@@ -397,11 +397,11 @@ Las participaciones que aporten ideas a la clase pueden ayudar a incrementar la 
 
 --------------------------------------------------------------------------------
 
-[laboratorio]: https://sistemasoperativos-ciencias-unam.gitlab.io/laboratorio/
-[pagina-curso]: https://SistemasOperativos-Ciencias-UNAM.gitlab.io/
-[grupo-gitlab]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/
-[lista]: https://tinyurl.com/ListaSO-2025-2
-[pizarron]: https://tinyurl.com/PizarronSO-2025-2
+[laboratorio]: https://Redes-Ciencias-UNAM.gitlab.io/laboratorio/
+[pagina-curso]: https://Redes-Ciencias-UNAM.gitlab.io/
+[grupo-gitlab]: https://gitlab.com/Redes-Ciencias-UNAM/
+[lista]: https://tinyurl.com/ListaSO-2026-1
+[pizarron]: https://tinyurl.com/PizarronSO-2026-1
 [telegram]: https://t.me/sistemasoperativos_ciencias_unam
 [temario]: http://www.fciencias.unam.mx/asignaturas/713.pdf
 [presentacion]: https://www.fciencias.unam.mx/docencia/horarios/presentacion/360876
@@ -417,26 +417,26 @@ Las participaciones que aporten ideas a la clase pueden ayudar a incrementar la 
 [calendario-fciencias-crop]: https://tonejito.github.io/talks/sistemas-operativos/img/calendario-fciencias.png
 [calendario-dgae-crop]: https://tonejito.github.io/talks/sistemas-operativos/img/semestral2025.jpg
 
-[pagina-tareas]: https://sistemasoperativos-ciencias-unam.gitlab.io/2025-2/tareas-so
-[repositorio-tareas]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/2025-2/tareas-so
+[pagina-tareas]: https://Redes-Ciencias-UNAM.gitlab.io/2026-1/tareas-so
+[repositorio-tareas]: https://gitlab.com/Redes-Ciencias-UNAM/2026-1/tareas-so
 [flujo-de-trabajo]: ./workflow/
-[flujo-de-trabajo-mr]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/2025-2/tareas-so/-/merge_requests
-[flujo-de-trabajo-repo]: https://sistemasoperativos-ciencias-unam.gitlab.io/2025-2/tareas-so/workflow/
-[flujo-de-trabajo-tareas]: https://sistemasoperativos-ciencias-unam.gitlab.io/2025-2/tareas-so/workflow/
+[flujo-de-trabajo-mr]: https://gitlab.com/Redes-Ciencias-UNAM/2026-1/tareas-so/-/merge_requests
+[flujo-de-trabajo-repo]: https://Redes-Ciencias-UNAM.gitlab.io/2026-1/tareas-so/workflow/
+[flujo-de-trabajo-tareas]: https://Redes-Ciencias-UNAM.gitlab.io/2026-1/tareas-so/workflow/
 
 <!-- -->
 [salon-Y303]: http://www.fciencias.unam.mx/plantel/horariosalon/20252/449 "Salón 303 de Yelizcalli"
 [salon-P207]: https://www.fciencias.unam.mx/plantel/detalle/25 "Salon P207 Edificio Poniente"
 [taller-Tlahuizcalpan]: https://www.fciencias.unam.mx/plantel/detalle/258 "Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información"
 [taller-Tlahuizcalpan-horario]: https://www.fciencias.unam.mx/plantel/horariosalon/20252/258
-[sección de prácticas]: https://gitlab.com/SistemasOperativos-Ciencias-UNAM/
+[sección de prácticas]: https://gitlab.com/Redes-Ciencias-UNAM/
 <!-- -->
 
 [youtube]: https://tinyurl.com/SO-Ciencias-UNAM-YouTube
-[youtube-lista-semestre]: https://tinyurl.com/SO-Ciencias-UNAM-YT-2025-2
+[youtube-lista-semestre]: https://tinyurl.com/SO-Ciencias-UNAM-YT-2026-1
 [youtube-lista-temas]: https://tinyurl.com/SO-Ciencias-UNAM-YT-temas
 [youtube-lista-complementarios]: https://tinyurl.com/SO-Ciencias-UNAM-YT-temascomp
 [jitsi]: https://meet.jit.si/sistop-fciencias
-[google-meet]: https://tinyurl.com/MeetSO-2025-2
-[google-drive]: https://tinyurl.com/DriveSO-2025-2
-[zoom]: https://tinyurl.com/ZoomSO-2025-2
+[google-meet]: https://tinyurl.com/MeetSO-2026-1
+[google-drive]: https://tinyurl.com/DriveSO-2026-1
+[zoom]: https://tinyurl.com/ZoomSO-2026-1

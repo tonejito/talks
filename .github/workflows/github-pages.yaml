@@ -94,9 +94,12 @@ jobs:
       - name: Install pandoc from TAR
         shell: bash
         env:
-          PANDOC_TAR_URL: "https://github.com/jgm/pandoc/releases/download/3.1.2/pandoc-3.1.2-linux-amd64.tar.gz"
+          # PANDOC_VERSION: "3.1.2"
+          PANDOC_VERSION: "3.6.3"
+          # PANDOC_TAR_URL: "https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-linux-amd64.tar.gz"
           PANDOC_TAR: "/tmp/pandoc.tar.gz"
         run: |
+          PANDOC_TAR_URL="https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-linux-amd64.tar.gz"
           wget -c -nv -O "${PANDOC_TAR}" "${PANDOC_TAR_URL}"
           tar -xzf "${PANDOC_TAR}" --strip-components 1 -C /usr/local
           rm -v "${PANDOC_TAR}"
@@ -140,7 +143,8 @@ jobs:
           ;
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3.1.0
+        # uses: actions/upload-artifact@v3.1.0
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: /tmp/artifact.tar
@@ -161,6 +165,7 @@ jobs:
       # Deploy the contents of 'artifact.tar' to GitHub pages
       - name: Deploy GitHub pages
         id: deployment
-        uses: actions/deploy-pages@v1.0.6
+        # uses: actions/deploy-pages@v1.0.6
+        uses: actions/deploy-pages@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

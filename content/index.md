@@ -21,7 +21,7 @@ lang: es-MX
 
 |	|	|
 |:------|:------|
-| [Presentación: Sistemas Operativos](sistemas-operativos) | Enero 2025
+| [Presentación: Sistemas Operativos](presentacion-sistemas-operativos) | Enero 2025
 | [Tareas en `git`](tareas-git) | Enero 2025
 | [Introducción a GNU/Linux](gnu-linux) | Febrero 2025
 | [Programación en C](c-programming) | Febrero 2025

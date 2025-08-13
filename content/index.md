@@ -26,3 +26,4 @@ lang: es-MX
 | [Introducción a GNU/Linux](gnu-linux) | Febrero 2025
 | [Programación en C](c-programming) | Febrero 2025
 | [Flujo de trabajo para entrega de actividades](workflow) | Febrero 2025
+| [Presentación: Redes](presentacion-redes) | Agosto 2025

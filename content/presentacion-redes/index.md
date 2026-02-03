@@ -4,7 +4,7 @@ subtitle: "White-Orange, Orange, White-Green, Blue, White-Blue, Green, White-Bro
 author:
 - José Luis Torres
 - Andrés Hernández
-date: 2026-1
+date: 2026-2
 affiliation:
 - https://Redes-Ciencias-UNAM.gitlab.io/
 abstract: |
@@ -19,18 +19,18 @@ lang: es-MX
 
 <!--	= ^ . ^ =	-->
 
-# Presentación del curso
+#	Presentación del curso
 
 Sistemas Operativos, Facultad de Ciencias, UNAM
 
-Semestre 2026-1
+Semestre 2026-2
 
 - José Luis Torres Rodríguez
 - Andrés Leonardo Hernández Bermúdez
 
 --------------------------------------------------------------------------------
 
-## Requisitos
+##	Requisitos
 
 - Conocimientos básicos de GNU/Linux
 - Conocimientos de Sistemas Operativos
@@ -38,7 +38,7 @@ Semestre 2026-1
 
 --------------------------------------------------------------------------------
 
-## Requisitos (cont.)
+##	Requisitos (cont.)
 
 - No tener materias encimadas en el horario de este curso
 - Asistencia regular a clase
@@ -48,35 +48,35 @@ Semestre 2026-1
 
 --------------------------------------------------------------------------------
 
-## Objetivos
+##	Objetivos
 
 - Conocer y comprender los conceptos, técnicas y algoritmos más importantes involucrados en redes de computadoras
 - Conocer los modelos de referencia empleados para la especificación de redes y hacer una revisión de TCP/IP
 
 --------------------------------------------------------------------------------
 
-## Objetivos (cont.)
+##	Objetivos (cont.)
 
 - Adquirir conocimientos acerca de la creación de una red y aplicaciones para redes
 - Adquirir conocimientos acerca de la implementación de diversos servicios de red, en sistemas GNU/Linux
 
 --------------------------------------------------------------------------------
 
-## Objetivos (cont.)
+##	Objetivos (cont.)
 
 - Estudiar las caracterísitcas de las redes más conocidas y usadas actualmente
 - Tener un panorama de las posibilidades, implicaciones, ventajas y riesgos del uso de una red
 
 --------------------------------------------------------------------------------
 
-## Objetivos (cont.)
+##	Objetivos (cont.)
 
 - Abordar temás básicos de seguridad en redes a nivel práctico
 - Obtener conocimientos de administración de sistemas GNU/Linux enfocados a redes, mediante la revisión de comandos y aplicaciones propios del sistema operativo
 
 --------------------------------------------------------------------------------
 
-## Sistemas Operativos
+##	Sistemas Operativos
 
 - GNU/Linux
 - BSD
@@ -84,40 +84,40 @@ Semestre 2026-1
 
 <hr/>
 
-## Lenguaje de programación
+##	Lenguaje de programación
 
 - C
 - `bash`
 
 --------------------------------------------------------------------------------
 
-## Impartición de las clases
+##	Impartición de las clases
 
 --------------------------------------------------------------------------------
 
-### Primera sesión para presentar los detalles del curso
+###	Primera sesión para presentar los detalles del curso
 
 La primera sesión se llevará a cabo en línea el día lunes 11 de agosto de 2025 a las 17:30 horas en el salón P207, en ésta se abordarán detalles acerca de la impartición del curso y se resolverán las dudas que puedan surgir a los interesados en el mismo.
 
 --------------------------------------------------------------------------------
 
-### Modalidad del curso
+###	Modalidad del curso
 
 Los detalles acerca de la impartición de las clases se indicarán durante la primera sesión, **considerando que la modalidad del curso está establecida como mixta**.
 
 --------------------------------------------------------------------------------
 
-### Teoría
+###	Teoría
 
 **Profesor**
 
 - Videos pre-grabados en el [canal de YouTube][youtube] de la materia
-- Lunes y miércoles de 17:30 a 19:00 hrs [Salón `P207`][salon-P207] y via [Zoom][zoom]
+- Lunes y miércoles de 17:30 a 19:00 hrs [Salón `P103`][salon-P103] y via [Zoom][zoom]
 
 **Ayudante**
 
 - Videos pre-grabados en el [canal de YouTube][youtube] de la materia
-- Martes y jueves de 17:00 a 18:30 hrs [Salón `P207`][salon-P207] y via [Zoom][zoom]
+- Martes y jueves de 17:30 a 18:30 hrs [Salón `P103`][salon-P103] y via [Zoom][zoom]
 
 <!--
 **Sesión de dudas**
@@ -132,7 +132,7 @@ Los detalles acerca de la impartición de las clases se indicarán durante la pr
 
 --------------------------------------------------------------------------------
 
-### Laboratorio
+###	Laboratorio
 
 Se llevarán a cabo una serie de prácticas con el objetivo de que el alumno se familiarice con el lenguaje de programación C y para reforzar los temas abordados en las sesiones teóricas.
 
@@ -140,10 +140,10 @@ Durante las sesiones de laboratorio se les compartirán los detalles acerca de l
 
 --------------------------------------------------------------------------------
 
-### Laboratorio (cont.)
+###	Laboratorio (cont.)
 
 <!--
-Lunes de 12:00 a 14:00 hrs. [Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información, Edificio Tlahuizcalpan][taller-Tlahuizcalpan]
+Viernes de 18:00 a 20:00 hrs. [Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información, Edificio Tlahuizcalpan][taller-Tlahuizcalpan]
 -->
 
 - Se subirán las especificaciones de las prácticas en la [sección de laboratorio en la página del curso][pagina-actividad-practicas] y se hará saber la fecha de entrega
@@ -159,7 +159,7 @@ Lunes de 12:00 a 14:00 hrs. [Taller de Sistemas Operativos, Redes de Cómputo, S
 
 --------------------------------------------------------------------------------
 
-## Recursos de cómputo
+##	Recursos de cómputo
 
 - Se utilizará [Google Drive][google-drive] para realizar trabajo colaborativo en equipo y para la entrega de algunas tareas
 - [GitLab][gitlab-grupo] para la entrega de proyectos de programación y la documentación correspondiente
@@ -167,7 +167,7 @@ Lunes de 12:00 a 14:00 hrs. [Taller de Sistemas Operativos, Redes de Cómputo, S
 
 --------------------------------------------------------------------------------
 
-## Recursos de cómputo (cont.)
+##	Recursos de cómputo (cont.)
 
 - Se hará uso de una lista de correo para comunicación grupal, esta lista se formará a partir de las cuentas de correo de los alumnos inscritos al grupo
 
@@ -181,7 +181,7 @@ Lunes de 12:00 a 14:00 hrs. [Taller de Sistemas Operativos, Redes de Cómputo, S
 
 --------------------------------------------------------------------------------
 
-## Recursos de cómputo (cont.)
+##	Recursos de cómputo (cont.)
 
 Se compartirán recursos adicionales a la cuenta de correo institucional `@ciencias` en caso de ser requerido
 - [Google Meet][google-meet] o [Zoom][zoom] para las sesiones de dudas
@@ -190,19 +190,19 @@ Se compartirán recursos adicionales a la cuenta de correo institucional `@cienc
 
 --------------------------------------------------------------------------------
 
-#### Calendario FCiencias
+####	Calendario FCiencias
 
 [![](img/calendario-fciencias.png)][calendario-fciencias-academicos]
 
 --------------------------------------------------------------------------------
 
-#### Calendario UNAM
+####	Calendario UNAM
 
 [![](img/calendario-unam.png)][calendario-dgae]
 
 --------------------------------------------------------------------------------
 
-## Temario
+##	Temario
 
 0. Propedéutico
 
@@ -211,7 +211,7 @@ Se compartirán recursos adicionales a la cuenta de correo institucional `@cienc
 
 --------------------------------------------------------------------------------
 
-## Temario (cont.)
+##	Temario (cont.)
 
 1. Introducción a redes de computadoras
 
@@ -221,7 +221,7 @@ Se compartirán recursos adicionales a la cuenta de correo institucional `@cienc
 
 --------------------------------------------------------------------------------
 
-## Temario (cont.)
+##	Temario (cont.)
 
 2. Capa física
 3. Capa de enlace
@@ -231,7 +231,7 @@ Se compartirán recursos adicionales a la cuenta de correo institucional `@cienc
 
 --------------------------------------------------------------------------------
 
-## Temario (cont.)
+##	Temario (cont.)
 
 7. Implementación de una red
     1. Servicios de red en sistemas GNU/Linux
@@ -241,26 +241,26 @@ Se compartirán recursos adicionales a la cuenta de correo institucional `@cienc
 
 --------------------------------------------------------------------------------
 
-## Evaluación del semestre
+##	Evaluación del semestre
 
 Se considerarán los siguientes elementos para llevar a cabo la evaluación:
 
 <!--
-#### Asistencia regular a clase
+####	Asistencia regular a clase
 -->
 
 --------------------------------------------------------------------------------
 
-### Examenes
+###	Examenes
 
 Se aplicarán 4 examenes, de acuerdo al avance que se tenga en el curso
 
 | Examen	| Fecha					|
 |--------------:|:--------------------------------------|
-| Parcial 1	| Miércoles	3 de septiembre	de 2025
-| Parcial 2	| Miércoles	1 de octubre	de 2025
-| Parcial 3	| Miércoles	29 de octubre	de 2025
-| Parcial 4	| Miércoles	26 de noviembre	de 2025
+| Parcial 1	| Miércoles	25 de febrero	de 2026
+| Parcial 2	| Miércoles	25 de marzo	de 2026
+| Parcial 3	| Miércoles	29 de abril	de 2026
+| Parcial 4	| Miércoles	26 de mayo	de 2026
 
 <div class="note">
 **NOTA**: Las fechas están sujetas a cambios
@@ -268,7 +268,7 @@ Se aplicarán 4 examenes, de acuerdo al avance que se tenga en el curso
 
 --------------------------------------------------------------------------------
 
-#### Requisitos para presentar examen
+####	Requisitos para presentar examen
 
 - Haber entregado puntualmente las tareas anteriores a la fecha del examen
 - No habrá reposiciones de examenes
@@ -277,14 +277,14 @@ Se aplicarán 4 examenes, de acuerdo al avance que se tenga en el curso
 
 --------------------------------------------------------------------------------
 
-### Prácticas
+###	Prácticas
 
 - Prácticas sobre cada uno de los temas principales vistos a lo largo del semestre
 - Es requisito indispensable el haber entregado todas las prácticas para tener derecho a obtener una calificación final aprobatoria en el semestre
 - **No es posible obtener una calificación aprobatoria si no se ha cumplido con la entrega de las prácticas y los proyectos asignados durante el semestre**.
 
 <!--
-### Exposiciones
+###	Exposiciones
 
 - Se propondrá una lista de temas a exponer "en equipo"
 - Cada equipo contará con al menos tres semanas para la preparación del tema correspondiente
@@ -292,13 +292,13 @@ Se aplicarán 4 examenes, de acuerdo al avance que se tenga en el curso
 
 --------------------------------------------------------------------------------
 
-### Tareas teórico-prácticas
+###	Tareas teórico-prácticas
 
 - En estas tareas se aplicarán todos los conocimientos vistos a la fecha, complementados con material adicional
 
 <!--
 
-### Participaciones en clase
+###	Participaciones en clase
 
 - Éstas son **OBLIGATORIAS** y son un elemento fundamental en la evaluación final
 - Se tomarán en cuenta sobre todo aquellas participaciones que refuercen lo visto en clase y que constituyan una aportación importante a la misma
@@ -306,14 +306,14 @@ Se aplicarán 4 examenes, de acuerdo al avance que se tenga en el curso
 
 --------------------------------------------------------------------------------
 
-## Notas
+##	Notas
 
 - La entrega de todos los trabajos será improrrogable
 - Todos los trabajos duplicados serán evaluados con cero, sin hacer indagaciones
 
 --------------------------------------------------------------------------------
 
-## Notas (cont.)
+##	Notas (cont.)
 
 - Las tareas y prácticas se deberán trabajar **en equipo**, se indicará la cantidad de integrantes que puede tener cada equipo
     - El trabajo <u>en equipo</u> se evalua considerando la participación de todos los integrantes
@@ -322,7 +322,7 @@ Se aplicarán 4 examenes, de acuerdo al avance que se tenga en el curso
 
 --------------------------------------------------------------------------------
 
-## Notas (cont.)
+##	Notas (cont.)
 
 - La calificación final se entregará a más tardar el día de la segunda vuelta de los examenes finales
     - Esta fecha también es el límite para solicitar aclaraciones de cualquier trabajo entregado
@@ -333,7 +333,7 @@ Se aplicarán 4 examenes, de acuerdo al avance que se tenga en el curso
 
 --------------------------------------------------------------------------------
 
-## Notas (cont.)
+##	Notas (cont.)
 
 - Sin excepción, no se aceptarán reclamaciones fuera de la fecha señalada en el punto anterior
 - Sin excepciones, no se permitirá renunciar a ninguna calificación
@@ -341,14 +341,14 @@ Se aplicarán 4 examenes, de acuerdo al avance que se tenga en el curso
 
 --------------------------------------------------------------------------------
 
-## Notas (cont.)
+##	Notas (cont.)
 
 - De ninguna manera se dará un trato ni una calificación especial a ningún estudiante, por el hecho de trabajar, tener un promedio alto en su historial académico, contar con algún tipo de beca o tener materias encimadas
 - Tampoco se tomarán en cuenta recomendaciones de ninguna persona para asignar la calificación final
 
 --------------------------------------------------------------------------------
 
-## Evaluación
+##	Evaluación
 
 La calificación final se calculará en base a los siguientes porcentajes:
 
@@ -367,7 +367,7 @@ Las participaciones que aporten ideas a la clase pueden ayudar a incrementar la 
 
 --------------------------------------------------------------------------------
 
-## Bibliografía
+##	Bibliografía
 
 - Computer Networking: a top down approach. 6th edition, Kurose, James F., Ross, Keith W., Addison Wesley
     - [Biblioteca Digital, UNAM][kurose-bidiunam-busqueda]
@@ -382,7 +382,7 @@ Las participaciones que aporten ideas a la clase pueden ayudar a incrementar la 
 
 ##	Ligas de interés
 
-- [Fechas oficiales][calendario-fciencias-estudiantes] del semestre 2026-1 aprobadas por el Consejo Técnico de la FC
+- [Fechas oficiales][calendario-fciencias-estudiantes] del semestre 2026-2 aprobadas por el Consejo Técnico de la FC
 - [Calendario escolar][calendario-unam] en la [página de la DGAE][calendario-dgae]
 - [Temario][curso-temario] en la página de la Facultad de Ciencias
 - [Detalles del curso][curso-detalles] en la página de la Facultad de Ciencias
@@ -392,7 +392,7 @@ Las participaciones que aporten ideas a la clase pueden ayudar a incrementar la 
 
 --------------------------------------------------------------------------------
 
-## Tareas
+##	Tareas
 
 - Crear una cuenta en GitLab asociada al correo `@ciencias`
     - <span class="red">No utilizar Google/GitHub/etc. para iniciar sesión</span>
@@ -402,11 +402,11 @@ Las participaciones que aporten ideas a la clase pueden ayudar a incrementar la 
 
 --------------------------------------------------------------------------------
 
-## Dudas u observaciones adicionales
+##	Dudas u observaciones adicionales
 
 --------------------------------------------------------------------------------
 
-## Ligas
+##	Ligas
 
 :::::::::::::: {.columns}
 ::: {.column width="33%"}
@@ -460,23 +460,23 @@ Las participaciones que aporten ideas a la clase pueden ayudar a incrementar la 
 [calendario-unam]: https://www.dgae.unam.mx/assets/images/semestral2026.jpg
 [calendario]: https://Redes-Ciencias-UNAM.gitlab.io/curso/calendario
 
-[curso-detalles]: https://www.fciencias.unam.mx/docencia/horarios/detalles/365547
+[curso-detalles]: https://www.fciencias.unam.mx/docencia/horarios/detalles/369972
 <!-- [curso-temario]: https://www.fciencias.unam.mx/asignaturas/714.pdf -->
 [curso-temario]: https://www.fciencias.unam.mx/sites/default/files/temario/714.pdf
-[curso-lista]: https://tinyurl.com/Lista-Redes-2026-1
-[curso-presentacion]: https://www.fciencias.unam.mx/docencia/horarios/presentacion/365547
+[curso-lista]: https://tinyurl.com/Lista-Redes-2026-2
+[curso-presentacion]: https://www.fciencias.unam.mx/docencia/horarios/presentacion/369972
 
-[pagina-tareas]: https://Redes-Ciencias-UNAM.gitlab.io/2026-1/tareas-redes
+[pagina-tareas]: https://Redes-Ciencias-UNAM.gitlab.io/2026-2/tareas-redes
 [flujo-de-trabajo]: https://Redes-Ciencias-UNAM.gitlab.io/workflow/
 
-[repositorio-tareas-practicas-milestones]: https://gitlab.com/Redes-Ciencias-UNAM/2026-1/tareas-redes/-/milestones?sort=start_date_asc&state=all
-[repositorio-tareas-practicas-merge-requests]: https://gitlab.com/Redes-Ciencias-UNAM/2026-1/tareas-redes/-/merge_requests
-[repositorio-tareas-practicas]: https://gitlab.com/Redes-Ciencias-UNAM/2026-1/tareas-redes
-[repositorio-tareas]: https://gitlab.com/Redes-Ciencias-UNAM/2026-1/tareas-redes
+[repositorio-tareas-practicas-milestones]: https://gitlab.com/Redes-Ciencias-UNAM/2026-2/tareas-redes/-/milestones?sort=start_date_asc&state=all
+[repositorio-tareas-practicas-merge-requests]: https://gitlab.com/Redes-Ciencias-UNAM/2026-2/tareas-redes/-/merge_requests
+[repositorio-tareas-practicas]: https://gitlab.com/Redes-Ciencias-UNAM/2026-2/tareas-redes
+[repositorio-tareas]: https://gitlab.com/Redes-Ciencias-UNAM/2026-2/tareas-redes
 
 [gitlab-grupo]: https://gitlab.com/Redes-Ciencias-UNAM/
-[horarios-plan-1994]: https://www.fciencias.unam.mx/docencia/horarios/20261/218/713
-[horarios-plan-2013]: https://www.fciencias.unam.mx/docencia/horarios/20261/1556/713
+[horarios-plan-1994]: https://www.fciencias.unam.mx/docencia/horarios/20262/218/714
+[horarios-plan-2013]: https://www.fciencias.unam.mx/docencia/horarios/20262/1556/714
 
 [pagina-curso]: https://Redes-Ciencias-UNAM.gitlab.io/
 [tareas]: https://Redes-Ciencias-UNAM.gitlab.io/tareas/
@@ -490,20 +490,21 @@ Las participaciones que aporten ideas a la clase pueden ayudar a incrementar la 
 
 [pizarron]: https://tinyurl.com/Pizarron-Redes
 
-[salon-P207]: https://www.fciencias.unam.mx/plantel/detalle/25 "Salon P207 Edificio Poniente"
-[salon-Y303]: https://www.fciencias.unam.mx/plantel/horariosalon/20261/449 "Salón 303 de Yelizcalli"
-[taller-Tlahuizcalpan-horario]: https://www.fciencias.unam.mx/plantel/horariosalon/20261/258
+[salon-P103]: https://www.fciencias.unam.mx/plantel/detalle/3 "Salón P103 Edificio Poniente"
+[salon-P207]: https://www.fciencias.unam.mx/plantel/detalle/25 "Salón P207 Edificio Poniente"
+[salon-Y303]: https://www.fciencias.unam.mx/plantel/horariosalon/20262/449 "Salón 303 de Yelizcalli"
+[taller-Tlahuizcalpan-horario]: https://www.fciencias.unam.mx/plantel/horariosalon/20262/258
 [taller-Tlahuizcalpan]: https://www.fciencias.unam.mx/plantel/detalle/258 "Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información"
 
 [youtube-lista-complementarios]: https://tinyurl.com/Redes-Ciencias-UNAM-YT-temascomp
-[youtube-lista-semestre]: https://tinyurl.com/Redes-Ciencias-UNAM-YT-2026-1
+[youtube-lista-semestre]: https://tinyurl.com/Redes-Ciencias-UNAM-YT-2026-2
 [youtube-lista-temas]: https://tinyurl.com/Redes-Ciencias-UNAM-YT-temas
 [youtube]: https://tinyurl.com/Redes-Ciencias-UNAM-YouTube
 
-[google-drive]: https://tinyurl.com/Drive-Redes-2026-1
-[google-meet]: https://tinyurl.com/Meet-Redes-2026-1
+[google-drive]: https://tinyurl.com/Drive-Redes-2026-2
+[google-meet]: https://tinyurl.com/Meet-Redes-2026-2
 [jitsi]: https://meet.jit.si/redes-fciencias
-[zoom]: https://tinyurl.com/Zoom-Redes-2026-1
+[zoom]: https://tinyurl.com/Zoom-Redes-2026-2
 [telegram]: https://t.me/redes_ciencias_unam
 
 [kurose-bidiunam-busqueda]: http://pbidi.unam.mx:8080/login?url=http://search.ebscohost.com/login.aspx?direct=true&bquery=(TI+Computer+networking+%3a+a+top-down+approach)+AND+(AU+Kurose%2c+James+F.)&cli0=FT1&clv0=Y&lang=es&type=1&site=eds-live "Biblioteca Digital, UNAM"

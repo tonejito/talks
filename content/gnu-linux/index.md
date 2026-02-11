@@ -397,7 +397,7 @@ $ printf "" > archivo
 
 $ echo "Hola mundo" > archivo
 
-$ truncate --size=0 > archivo
+$ truncate --size=0 archivo
 ```
 
 --------------------------------------------------------------------------------
@@ -744,9 +744,9 @@ Change: 2023-08-19 23:58:59.920000000 -0600
 | Modo simbólico | Modo Octal <br/> `ugo`	| Permisos Dueño <br/> `u`	| Permisos Grupo <br/> `g`	| Permisos Otros <br/> `o`
 |:--------------:|:----------------------------:|:-----------------------------:|:-----------------------------:|:-----------------------:|
 | `rwx------`	 | 700				| **111**			| `000`				| `000`
-| `rwxr-x---`	 | 750				| **111**			| **11**`0`			| `000`
-| `rwxr-xr-x`	 | 755				| **111**			| **11**`0`			| **11**`0`
-| `rwxrwxr-x`	 | 775				| **111**			| **111**			| **11**`0`
+| `rwxr-x---`	 | 750				| **111**			| **1**`0`**1**			| `000`
+| `rwxr-xr-x`	 | 755				| **111**			| **1**`0`**1**			| **1**`0`**1**
+| `rwxrwxr-x`	 | 775				| **111**			| **111**			| **1**`0`**1**
 | `rwxrwxrwx`	 | 777				| **111**			| **111**			| **111**
 | Representación | **Octal** <br/> `ugo`	| **Bits** <br/> `rwx`		| **Bits** <br/> `rwx`		| **Bits** <br/> `rwx`
 </div>
@@ -759,11 +759,11 @@ Change: 2023-08-19 23:58:59.920000000 -0600
 
 ### Tipos de usuario
 
-| Tipo | Identificador | Descripción
-|:-----|:-------------:|:-----------|
-| Normal	| `$`	| Usuario normal del equipo
-| Sistema	| ` `	| Asociado a servicios del sistema `*`
-| Súper-usuario	| `#`	| Administrador del sistema
+| Tipo		| Identificador	| Descripción
+|:--------------|:-------------:|:-----------|
+| Normal	| `$`		| Usuario normal del equipo
+| Sistema	| ` `		| Asociado a servicios del sistema `*`
+| Súper-usuario	| `#`		| Administrador del sistema
 
 `*` Los usuarios del sistema NO pueden iniciar sesión en el equipo
 

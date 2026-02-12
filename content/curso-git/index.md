@@ -1053,7 +1053,7 @@ Author: Andrés Hernández <andres.hernandez@ciencias.unam.mx>
 Date:   Thu Jun 9 10:53:34 2016 -0500
 
     Página de prueba para `curso-git`
-    
+
     + Código base `html5` sin estilos
 
 ...	...	...	...	...	...	más entradas del log	...
@@ -1072,7 +1072,7 @@ Author: Andrés Hernández <andres.hernandez@ciencias.unam.mx>
 Date:   Wed Jun 8 13:46:21 2016 -0500
 
     Commit inicial del proyecto
-    
+
     + Se agrega el archivo README.md
 ```
 
@@ -1090,7 +1090,7 @@ Author: Facultad de Ciencias <ciencias@debian8.local>
 Date:   Tue 19 Jan 03:14:08 2038 +0000
 
     Título del commit
-    
+
     Mensaje del commit
 ```
 

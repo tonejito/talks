@@ -1,52 +1,46 @@
+---
+title: Control de versiones con GIT
+subtitle: "(Do not) Use the `git push --force` Luke"
+author:
+- Andrés Hernández - `tonejito`
+date: Febrero 2025
+affiliation:
+- http://localhost/
+abstract: |
+  Control de versiones con GIT
+description: |
+  Control de versiones con GIT
+copyright: CC-BY-SA-4.0
+ROBOTS:	NOINDEX, UNFOLLOW
+baseheaderlevel: 2
+lang: es-MX
+---
+
+<!--	= ^ . ^ =	-->
 
 # Control de versiones con git
-<div style="margin: 0.3em auto; text-align: center;">
-  <div style="font-size: 1.5em;">Andrés Hernández</div>
-  <span>
-    <img id="mail" style="width: auto; height: 0.7em;" alt="mail" src="img/mail.svg" />
-  </span>
-  <div style="font-size: 1.1em;">Universidad Nacional Autónoma de México</div>
-  <div style="font-size: 1.1em;">Facultad de Ciencias</div>
-  <div style="font-size: 0.9em;">Junio 2016</div>
-</div>
-
-<span>
-  <a id="book" alt="html5 book version" href="book.html">
-    <img style="width: 2em; height: auto; margin-left: auto; margin-right: auto; display: block;" alt="html5 book version" src="img/html5.svg" />
-  </a>
-</span>
-<br/>
-<span>
-  <a id="UNAM" href="http://www.unam.mx/">
-    <img style="width: auto; height: 8em; margin-left: 25%; float: left;" alt="UNAM" src="img/UNAM.svg" />
-  </a>
-</span>
-<span>
-  <a id="Ciencias" href="http://www.fciencias.unam.mx/">
-    <img style="width: auto; height: 8em; margin-right: 25%; float: right;" alt="Facultad de Ciencias" src="img/Ciencias.svg" />
-  </a>
-</span>
-<div style="clear: both;" />
 
 --------------------------------------------------------------------------------
 
-# Información del curso
+## Información del curso
 
-## Nivel de especialización
+--------------------------------------------------------------------------------
+
+### Nivel de especialización
 
 Básico
 
-## Objetivo
+### Objetivo
 
 El alumno conocerá el sistema de control de versiones git y aprenderá el uso de esta herramienta tanto desde línea de comandos, como desde un cliente de escritorio y vía web a través de Github.
 
 --------------------------------------------------------------------------------
 
-# Perfil del asistente
+### Perfil del asistente
 
 Estudiantes, pasantes o egresados de carreras afines a computación, desarrolladores y entusiastas de la programación.
 
-## Conocimientos previos
+#### Conocimientos previos
 
 + Conocimientos básicos de GNU/Linux y Windows a nivel usuario
 + Uso de internet
@@ -55,12 +49,16 @@ Estudiantes, pasantes o egresados de carreras afines a computación, desarrollad
 
 --------------------------------------------------------------------------------
 
-# Temario
+### Temario
 
 1. Introducción a los sistemas de control de versiones
    1. Local
    2. Centralizado
    3. Distribuido
+
+--------------------------------------------------------------------------------
+
+### Temario (_cont_.)
 
 2. Introducción a git
    1. Inicializar un repositorio
@@ -75,12 +73,16 @@ Estudiantes, pasantes o egresados de carreras afines a computación, desarrollad
 
 --------------------------------------------------------------------------------
 
-# Temario (cont)
+### Temario (_cont_.)
 
 3. Configuración del cliente git
    1. Datos del usuario
    2. Reparar fin de línea en los archivos
    3. Ignorar espacios en blanco
+
+--------------------------------------------------------------------------------
+
+### Temario (_cont_.)
 
 4. Trabajando con repositorios existentes
    1. Clonar un repositorio existente
@@ -89,13 +91,18 @@ Estudiantes, pasantes o egresados de carreras afines a computación, desarrollad
 
 --------------------------------------------------------------------------------
 
-# Temario (cont 2)
+### Temario (_cont_.)
 
 5. Introducción a Github
    1. Crear una cuenta en Github
    2. Administración de repositorios via web
    3. Cliente gráfico de git para Mac y Windows
    4. Documentación en Markdown
+
+
+--------------------------------------------------------------------------------
+
+### Temario (_cont_.)
 
 6. Trabajo colaborativo en Github
    1. Fork
@@ -106,36 +113,51 @@ Estudiantes, pasantes o egresados de carreras afines a computación, desarrollad
 
 --------------------------------------------------------------------------------
 
-# 0. Configurar el nombre de usuario
+### 0. Configurar el nombre de usuario
 
 + Abrir el cuadro de diálogo de **preferencias del sistema**
 
-<span>
-  <img style="margin-left: auto; margin-right: auto; display: block;" alt="System Settings" src="img/0-System_settings.png" />
-</span>
+![](img/0-System_settings.png)
 
 --------------------------------------------------------------------------------
 
 + Selecciona la opción **Usuarios**
 
-<span>
-  <img style="margin-left: auto; margin-right: auto; display: block;" alt="System Settings ⇒ Users" src="img/0-Users.png" />
-</span>
+![](img/0-Users.png)
 
 --------------------------------------------------------------------------------
 
 + Da clic en **Facultad de Ciencias**, introduce tu nombre y presiona `<Enter>`
 + Al terminar, cierra la ventana
 
-<span>
-  <img style="margin-left: auto; margin-right: auto; display: block;" alt="System Settings ⇒ Users ⇒ Username" src="img/0-Username.png" />
-</span>
+![](img/0-Username.png)
 
 --------------------------------------------------------------------------------
 
-# 1. Introducción a los sistemas de control de versiones
+Esto también puede cambiarse con el comando [`chfn(1)`][man-1-chfn]
 
-## Sistema de control de versiones
+[man-1-chfn]: https://linux.die.net/man/1/chfn
+
+```
+root@debian-12:~# chfn --full-name "Andrés Hernández" mi-usuario
+```
+
+Se puede verificar con [`getent(1)`][man-1-getent]
+
+[man-1-getent]: https://linux.die.net/man/1/getent
+
+```
+root@debian-12:~# getent passwd mi-usuario
+mi-usuario:x:1000:1000:Andrés Hernández,,,:/home/mi-usuario:/bin/bash
+```
+
+--------------------------------------------------------------------------------
+
+### 1. Introducción a los sistemas de control de versiones
+
+--------------------------------------------------------------------------------
+
+#### Sistema de control de versiones
 
 + Guarda las versiones del código fuente de un programa
 + Permite mostrar los cambios en el código
@@ -145,15 +167,15 @@ Estudiantes, pasantes o egresados de carreras afines a computación, desarrollad
 
 --------------------------------------------------------------------------------
 
-## 1.1. Local
+#### 1.1. Control de versiones local
 
-### Guardar cambios en archivos separados
+Guardar cambios en archivos separados
 
 ```
 	prog.c prog1.c prog2.c ... prog<n>.c
 ```
 
-### Guardar cambios en carpetas separadas
+Guardar cambios en carpetas separadas
 
 ```
   tarea/prog.c
@@ -165,7 +187,7 @@ Estudiantes, pasantes o egresados de carreras afines a computación, desarrollad
 
 --------------------------------------------------------------------------------
 
-#### Desventajas del control de versiones local
+###### Desventajas del control de versiones local
 
 + Se tienen muchos archivos bastante similares
 + No se conoce cual es la última versión
@@ -175,75 +197,94 @@ Estudiantes, pasantes o egresados de carreras afines a computación, desarrollad
 
 --------------------------------------------------------------------------------
 
-### Enviar cambios por correo electrónico
+##### Enviar cambios por correo electrónico
 
 + Se genera un correo por cada versión enviada
 + Puede ser tedioso encontrar una versión anterior
 
-  <img alt="Thunderbird" src="img/1_1-thunderbird.png" style="width: auto; height: 50px;" />
-  <img alt="Gmail" src="img/1_1-gmail.svg" style="width: auto; height: 50px;" />
-  <img alt="Apple Mail" src="img/1_1-apple-mail.png" style="width: auto; height: 50px;" />
-  <img alt="Outlook" src="img/1_1-outlook.svg" style="width: auto; height: 50px;" />
+  <img alt="Thunderbird" src="img/1_1-thunderbird.png" style="width: auto; height: 1em;" />
+  <img alt="Gmail" src="img/1_1-gmail.svg" style="width: auto; height: 1em;" />
+  <img alt="Apple Mail" src="img/1_1-apple-mail.png" style="width: auto; height: 1em;" />
+  <img alt="Outlook" src="img/1_1-outlook.svg" style="width: auto; height: 1em;" />
+
+<!--
+![](img/1_1-thunderbird.png)
+![](img/1_1-gmail.svg)
+![](img/1_1-apple-mail.png)
+![](img/1_1-outlook.svg)
+-->
 
 --------------------------------------------------------------------------------
 
-### Utilizar almacenamiento en la nube
+##### Utilizar almacenamiento en la nube
 
 + Algunos servicios de almacenamiento en la nube permiten regresar a versiones anteriores
 + Muchos de los servicios gratuitos únicamente permiten un número finito de versiones anteriores
 + Algunas veces los servicios de almacenamiento quitan las versiones anteriores más antiguas
 
-  <img alt="Dropbox" src="img/1_1-dropbox.svg" style="width: auto; height: 50px;" />
-  <img alt="GoogleDrive" src="img/1_1-google_drive.png" style="width: auto; height: 50px;" />
-  <img alt="Evernote" src="img/1_1-evernote.svg" style="width: auto; height: 50px;" />
-  <img alt="box.net" src="img/1_1-box.svg" style="width: auto; height: 50px;" />
-  <img alt="OneDrive" src="img/1_1-onedrive.svg" style="width: auto; height: 50px;" />
-  <img alt="ownCloud" src="img/1_1-owncloud.svg" style="width: auto; height: 50px;" />
+  <img alt="Dropbox" src="img/1_1-dropbox.svg" style="width: auto; height: 1em;" />
+  <img alt="GoogleDrive" src="img/1_1-google_drive.png" style="width: auto; height: 1em;" />
+  <img alt="Evernote" src="img/1_1-evernote.svg" style="width: auto; height: 1em;" />
+  <img alt="box.net" src="img/1_1-box.svg" style="width: auto; height: 1em;" />
+  <img alt="OneDrive" src="img/1_1-onedrive.svg" style="width: auto; height: 1em;" />
+  <img alt="ownCloud" src="img/1_1-owncloud.svg" style="width: auto; height: 1em;" />
 
 --------------------------------------------------------------------------------
 
-## 1.2. Centralizado - CVCS
+#### 1.2. Centralizado - CVCS
 
 + Se basa en un modelo *cliente-servidor*
 + El servidor tiene una copia de todas las versiones del código
 + Los clientes *clonan* el repositorio y tienen una *copia de trabajo* que pueden modificar
 + Cuando los cambios están listos, los clientes los envían al servidor
-+ Si el servidor falla, se pierden todas las versiones del proyecto
-
-  <img alt="SVN" src="img/1_2-svn.svg" style="width: auto; height: 50px;" />
-  <br />
-  <img alt="svn-actions" src="img/1_2-svn_actions.svg" style="width: auto; height: auto;" />
 
 --------------------------------------------------------------------------------
 
-## 1.3. Distribuido - DVCS
++ Si el servidor falla, se pierden todas las versiones del proyecto
+
+  <img alt="SVN" src="img/1_2-svn.svg" style="width: auto; height: 1em;" />
+  <br />
+  <img alt="svn-actions" src="img/1_2-svn_actions.svg" style="width: auto; height: auto; background: silver;" />
+
+--------------------------------------------------------------------------------
+
+#### 1.3. Distribuido - DVCS
 
 + Cada cliente tiene una copia de todas las versiones del proyecto
 + Si el servidor falla es posible copiar todas las versiones desde un cliente
 + Es posible establecer estructuras jerárquicas
 
-  <img alt="git" src="img/1_3-git.svg" style="width: auto; height: 50px;" />
-  <img alt="hg" src="img/1_3-hg.svg" style="width: auto; height: 50px;" />
-  <img alt="bzr" src="img/1_3-bzr.svg" style="width: auto; height: 50px;" />
-  <img alt="arch" src="img/1_3-arch.png" style="width: auto; height: 50px;" />
-  <img alt="BitKeeper" src="img/1_3-bitkeeper.png" style="width: auto; height: 50px;" />
+  <img alt="git" src="img/1_3-git.svg" style="width: auto; height: 1.5em;" />
+  <img alt="hg" src="img/1_3-hg.svg" style="width: auto; height: 1.5em;" />
+  <img alt="bzr" src="img/1_3-bzr.svg" style="width: auto; height: 1.5em;" />
+  <img alt="arch" src="img/1_3-arch.png" style="width: auto; height: 1.5em;" />
+  <img alt="BitKeeper" src="img/1_3-bitkeeper.png" style="width: auto; height: 1.5em;" />
 
 --------------------------------------------------------------------------------
 
-# 2. Introducción a git
+### 2. Introducción a git
+
+--------------------------------------------------------------------------------
+
+#### Breve historia de GIT
 
 + El desarrollo del kernel Linux entre los años 1991 - 2002 no utilizaba un control de versiones *per-se*
 + En 2002 se utilizó un DVCS propietario llamado BitKeeper, que se ofrecía sin costo a los miembros del proyecto
 + En 2005 la compañía quiso cobrar el uso del software
-+ La comunidad de desarrolladores, incluyendo a Linus Torvalds, optó por desarrollar su propia herramienta
-
-  <img alt="BitKeeper" src="img/2-bitkeeper.png" style="width: auto; height: 50px;" />
-  <span style="font-size: 5em;">⇒</span>
-  <img alt="git" src="img/2-git.svg" style="width: auto; height: 50px;" />
 
 --------------------------------------------------------------------------------
 
-### 2.0.1. Características de git
+#### Breve historia de GIT (_cont_.)
+
++ La comunidad de desarrolladores, incluyendo a Linus Torvalds, optó por desarrollar su propia herramienta
+
+  <img alt="BitKeeper" src="img/2-bitkeeper.png" style="width: auto; height: 3em;" />
+  <span style="font-size: 5em;">⇒</span>
+  <img alt="git" src="img/2-git.svg" style="width: auto; height: 4em;" />
+
+--------------------------------------------------------------------------------
+
+##### 2.0.1. Características de git
 
 + Velocidad
 + Diseño simple
@@ -255,7 +296,7 @@ Estudiantes, pasantes o egresados de carreras afines a computación, desarrollad
 
 --------------------------------------------------------------------------------
 
-### 2.0.2. Áreas de trabajo
+##### 2.0.2. Áreas de trabajo
 
 + `git` presenta tres áreas de trabajo, asociadas con los estados que puede tener un archivo
 + <span style="color: OrangeRed;">**Working Directory**</span> es el directorio de trabajo.
@@ -263,23 +304,41 @@ Estudiantes, pasantes o egresados de carreras afines a computación, desarrollad
 + <span style="color: DarkCyan;">**Staging Area**</span> es el área donde se preparan los cambios que serán versionados
 + <span style="color: DimGrey;">**El directorio `.git`**</span> guarda todas las versiones de los archivos del proyecto
 
+--------------------------------------------------------------------------------
+
+##### 2.0.2. Áreas de trabajo (_cont_.)
+
 <img alt="" src="img/book/2_0-areas.png" longdesc="https://git-scm.com/book/en/v2/Getting-Started-Git-Basics#The-Three-States" />
 
 --------------------------------------------------------------------------------
 
-#### 2.0.1.1. Estados de un archivo
+###### 2.0.1.1. Estados de un archivo
 
 Estado    | Descripción                                                | Comando
 ---------:| ---------------------------------------------------------- |:-----------------------------------:
 <span style="color: OrangeRed;">**Modified**</span> | El archivo fue editado en el *directorio de trabajo*              | `editor archivo`
 <span style="color: DarkCyan;">**Staged**</span>    | El archivo (nuevo o modificado) fue agregado al *área de staging* | `git add archivo`
+
+--------------------------------------------------------------------------------
+
+###### 2.0.1.1. Estados de un archivo (_cont_.)
+
+Estado    | Descripción                                                | Comando
+---------:| ---------------------------------------------------------- |:-----------------------------------:
 <span style="color: DarkCyan;">**Staged**</span>    | El archivo se movió o renombró utilizando `git`                   | `git mv archivo1 archivo2`
 <span style="color: DarkCyan;">**Staged**</span>    | El archivo se borró del *área de staging* utilizando `git`        | `git rm archivo`
+
+--------------------------------------------------------------------------------
+
+###### 2.0.1.1. Estados de un archivo (_cont_.)
+
+Estado    | Descripción                                                | Comando
+---------:| ---------------------------------------------------------- |:-----------------------------------:
 <span style="color: DimGrey;">**Committed**</span>  | Los cambios del archivo fueron guardados en el repositorio        | `git commit archivo`
 
 --------------------------------------------------------------------------------
 
-### 2.0.2. Instalar git en GNU/Linux
+##### 2.0.2. Instalar git en GNU/Linux
 
 + En [Debian GNU/Linux](https://www.debian.org/ "Debian GNU/Linux") utilizando [`apt-get`](http://linux.die.net/man/8/apt-get "man 8 apt-get") o [`aptitude`](http://linux.die.net/man/8/aptitude "man 8 aptitude")
 
@@ -297,7 +356,7 @@ Para instalar en otras variantes de UNIX ver la [documentación oficial](https:/
 
 --------------------------------------------------------------------------------
 
-## 2.1. Inicializar un nuevo repositorio
+#### 2.1. Inicializar un nuevo repositorio
 
 + Para crear un repositorio se utiliza el comando [`git init`](https://git-scm.com/docs/git-init "git-init(1)")
 
@@ -310,6 +369,10 @@ git init [-q | --quiet] [--bare] [--template=<template_directory>]
          [--separate-git-dir <git dir>] [--shared[=<permissions>]] [directory]
 ```
 
+--------------------------------------------------------------------------------
+
+#### 2.1. Inicializar un nuevo repositorio (_cont_.)
+
 + Es posible crear el directorio antes de inicializar
 
 ```sh
@@ -321,7 +384,10 @@ tonejito@linux:~/repositorio$ ls -lA
 total 0
 drwxr-xr-x 7 tonejito users 147 Jun  3 17:16 .git
 ```
+
 --------------------------------------------------------------------------------
+
+#### 2.1. Inicializar un nuevo repositorio (_cont_.)
 
 + También se puede especificar el directorio de destino en el comando [`git init`](https://git-scm.com/docs/git-init "git-init(1)")
 
@@ -332,6 +398,11 @@ tonejito@linux:~$ ls -lA otro-repo/
 total 0
 drwxr-xr-x 7 tonejito users 147 Jun  3 17:19 .git
 ```
+
+
+--------------------------------------------------------------------------------
+
+#### 2.1. Inicializar un nuevo repositorio (_cont_.)
 
 + Si el repositorio será compartido en un servidor, utilizar la opción `--shared`
 + No olvides ajustar los permisos del directorio
@@ -347,15 +418,24 @@ drwxr-xr-x 57 tonejito users 4096 Jun  6 09:50 ..
 drwxrwsr-x  7 tonejito users  147 Jun  6 09:50 .git
 ```
 
-+ Si tienes dudas, [RTFM](https://git-scm.com/docs/ "git Documentation")
+--------------------------------------------------------------------------------
+
+#### 2.1. Inicializar un nuevo repositorio (_cont_.)
+
++ Si tienes dudas, [_RTFM_‼️](https://git-scm.com/docs/ "Le invitamos a leer el fabuloso manual")
 
 --------------------------------------------------------------------------------
 
-## 2.2. Clonar un repositorio existente
+#### 2.2. Clonar un repositorio existente
 
 + Se utiliza el comando [`git clone`](https://git-scm.com/docs/git-clone "git-clone(1)") para guardar una copia de un repositorio existente
 + Es útil cuando se quiere trabajar de manera colaborativa en una aplicación (como el kernel Linux)
 + El código ṕuede ser modificado y se pueden seguir haciendo commits
+
+--------------------------------------------------------------------------------
+
+#### 2.2. Clonar un repositorio existente (_cont_.)
+
 + Para clonar el repositorio es necesario conocer la URL donde se aloja el proyecto
 
   * `/path/to/repo.git/`
@@ -371,7 +451,7 @@ drwxrwsr-x  7 tonejito users  147 Jun  6 09:50 .git
 
 --------------------------------------------------------------------------------
 
-### 2.2.1. Ejemplo de git-clone
+##### 2.2.1. Ejemplo de `git-clone(1)`
 
 + Para clonar el repositorio de git de este curso se utiliza el comando [`git clone`](https://git-scm.com/docs/git-clone "git-clone(1)") de la siguiente manera
 
@@ -386,6 +466,10 @@ Resolving deltas: 100% (45/45), done.
 Checking connectivity... done.
 ```
 
+--------------------------------------------------------------------------------
+
+##### 2.2.1. Ejemplo de `git-clone(1)` (_cont_.)
+
 + El repositorio se clona en el directorio `curso-git`
 + Contiene los archivos del proyecto y el directorio `.git`
 
@@ -395,14 +479,20 @@ tonejito@linux:~$ ls -A curso-git/
 img   index.html  Makefile    README.md
 ```
 
-+ Ejemplo recursivo :grin:
+`<coff>` Ejemplo recursivo :grin: `</coff>`
+
 --------------------------------------------------------------------------------
 
-## 2.3. Agregar archivos
+#### 2.3. Agregar archivos con `git-add(1)`
 
 + El comando [`git add`](https://git-scm.com/docs/git-add "git-add(1)") se utiliza para especificar qué archivos incluirá git en el control de versiones
 + Los cambios del <span style="color: OrangeRed;">**Directorio de trabajo**</span> se incluyen en el <span style="color: DarkCyan;">**Área de Staging**</span>, es decir, se marcan para ser enviados en un *commit*
 + El <span style="color: DarkCyan;">**Área de Staging**</span> también es conocida como **index**
+
+--------------------------------------------------------------------------------
+
+#### 2.3. Agregar archivos con `git-add(1)` (_cont_.)
+
 + La página de `man` de `git add` muestra las opciones de línea de comandos
 
 ```
@@ -416,14 +506,24 @@ git add [-n]  [-v]  [--force | -f]  [--interactive | -i]  [--patch | -p]
 
 --------------------------------------------------------------------------------
 
+##### Agregar contenido al repositorio
+
 + Crear un archivo de texto con el nombre `README.md` y escribir algún mensaje simple en el
 + Muchos repositorios utilizan [Markdown](http://daringfireball.net/projects/markdown/ "Markdown") para el archivo **README** de sus repositorios
 + Github tiene una [versión especial de Markdown](https://help.github.com/categories/writing-on-github/ "GitHub Flavored Markdown")
 + Existen varios editores en línea como [Dillinger](http://dillinger.io/ "Dillinger") y [StackEdit](https://stackedit.io/editor "StackEdit")
 
+--------------------------------------------------------------------------------
+
+##### Archivo `README.md`
+
+Editar el archivo `README.md`
+
 ```sh
 tonejito@linux:~/repositorio$ editor README.md
 ```
+
+* Contenido de ejemplo
 
 ```
 # Mi repositorio de git
@@ -432,6 +532,8 @@ Andrés Hernández
 ```
 
 --------------------------------------------------------------------------------
+
+##### Revisar el estado del repositorio con `git-status(1)`
 
 + Ejecutar el comando [`git status`](https://git-scm.com/docs/git-status "git-status(1)") para revisar si hay cambios
 
@@ -450,6 +552,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 --------------------------------------------------------------------------------
+
+##### Agregar el archivo con `git-add(1)`
 
 + Agregar el archivo `README.md` al repositorio con el comando [`git add`](https://git-scm.com/docs/git-add "git-add(1)")
 
@@ -470,16 +574,25 @@ Changes to be committed:
 	new file:   README.md
 ```
 
+--------------------------------------------------------------------------------
+
+##### Agregar el archivo con `git-add(1)` (_cont_.)
+
 + Desapareció el mensaje que sugería utilizar `git add` (comparar con la lámina anterior)
 
 + El cambio **aún no está guardado**, ver siguiente sección
 
 --------------------------------------------------------------------------------
 
-## 2.4. Guardar cambios en el repositorio
+#### 2.4. Guardar cambios en el repositorio
 
 + Para enviar un cambio del <span style="color: DarkCyan;">**Área de Staging**</span> al <span style="color: DimGrey;">**directorio `.git`**</span> se utiliza el comando [`git commit`](https://git-scm.com/docs/git-commit "git-commit(1)")
 + Cada revisión generada guarda una entrada en la [bitácora del repositorio](https://git-scm.com/docs/git-log "git-log(1)")
+
+--------------------------------------------------------------------------------
+
+#### 2.4. Guardar cambios en el repositorio (_cont_.)
+
 + La página de `man` de `git commit` muestra las opciones de línea de comandos
 
 ```
@@ -495,7 +608,7 @@ git commit [-a | --interactive | --patch]  [-s]  [-v]  [-u<mode>]  [--amend]
 
 --------------------------------------------------------------------------------
 
-### 2.4.1. git-commit interactivo
+##### 2.4.1. git-commit interactivo
 
 + Para guardar el archivo recién creado en la sección anterior se ejecuta [`git commit`](https://git-scm.com/docs/git-commit "git-commit(1)")
 
@@ -505,7 +618,12 @@ tonejito@linux:~/repositorio$ git commit README.md
 
 + Se abre un editor de texto donde debe escribirse *el título* y *la descripción* del commit
 + Todas las líneas que inicien con el símbolo `#` serán ignoradas
-+ Si se guarda un mensaje vacío, se cancela el proceso de `commit`
++ Si se guarda un mensaje vacío, se cancela el proceso de _commit_
+
+--------------------------------------------------------------------------------
+
+##### 2.4.1. git-commit interactivo (_cont_.)
+
 + El editor de texto se toma de las variables `$GIT_EDITOR`, `core.editor`, `$VISUAL` o `$EDITOR`
 
 ```
@@ -526,27 +644,59 @@ Commit inicial del proyecto
 
 --------------------------------------------------------------------------------
 
-### 2.4.2. Estructura del mensaje de un *commit*
+##### 2.4.2. Estructura del mensaje de un *commit*
 
 + Se recomienda que la estructura del mensaje de un *commit* tenga los siguientes elementos
 + El único elemento requerido es el **título**
 
-Línea | Elemento               | Contenido
-:----:| :--------------------: |:-----------------------------------------------
-  1   | Título del commit      | Descripción **breve** y **concreta** del cambio aplicado, menos de 50 caracteres
-  2   | Línea en blanco        | Se utiliza para separar el título del cuerpo
-  3   | Descripción del commit | Mensaje que explica el cambio aplicado a profundidad
-  …   | ✓                      | Puede abarcar varias líneas de texto
-  …   | ✓                      | Es posible insertar elementos de sintáxis de Markdown
-  …   | ✓                      | Se pueden utilizar listas para enumerar elementos de manera vertical
+| Línea	| Elemento
+|:-----:|:---------------------:
+  1	| Título del commit
+  2	| Línea en blanco
+  3	| Descripción del commit
 
 --------------------------------------------------------------------------------
 
-### 2.4.3. git-commit - one-liner
+###### 2.4.2.1. Título del _commit_
+
+Es el único elemento requerido en un _commit_
+
+| Línea	| Elemento		| Contenido
+|:-----:|:---------------------:|:---------------------------------------------
+|  1	| Título del commit	| Descripción **breve** y **concreta** del cambio aplicado, menos de 50 caracteres
+
+--------------------------------------------------------------------------------
+
+###### 2.4.2.1. Línea en blanco
+
+| Línea	| Elemento		| Contenido
+|:-----:|:---------------------:|:---------------------------------------------
+  2   | Línea en blanco        | Se utiliza para separar el título del cuerpo
+
+--------------------------------------------------------------------------------
+
+###### 2.4.2.1. Descripción del _commit_
+
+| Línea	| Elemento		| Contenido
+|:-----:|:---------------------:|:---------------------------------------------
+  3	| Descripción del commit | Mensaje que explica el cambio aplicado a profundidad
+  …	| ✓                      | Puede abarcar varias líneas de texto
+  …	| ✓                      | Es posible insertar elementos de sintáxis de Markdown
+  …	| ✓                      | Se pueden utilizar listas para enumerar elementos de manera vertical
+
+
+--------------------------------------------------------------------------------
+
+##### 2.4.3. `git-commit(1)` - _one liner_
 
 + Es posible ejecutar [`git commit`](https://git-scm.com/docs/git-commit "git-commit(1)") y especificar el *título del commit* en el mismo comando
 + No se guarda la descripción del *commit*
 + Puede ser utilizado en scripts o procesos automatizados
+
+--------------------------------------------------------------------------------
+
+##### 2.4.3. `git-commit(1)` - _one liner_ (_cont_.)
+
 + La bitácora del repositorio se puede visualizar con el comando [`git log`](https://git-scm.com/docs/git-log "git-log(1)")
 
 ```sh
@@ -563,13 +713,18 @@ Date:   Wed Jun 8 13:52:04 2016 -0500
 
 --------------------------------------------------------------------------------
 
-## 2.5. Borrar archivos
+#### 2.5. Borrar archivos
 
 + Para borrar archivos del repositorio se utiliza el comando [`git rm`](https://git-scm.com/docs/git-rm "git-rm(1)")
 + No utilizar `rm` o borrar mediante el *navegador de archivos*
 + Para borrar archivos del <span style="color: DimGrey;">**directorio `.git`**</span> se utiliza el comando [`git rm`](https://git-scm.com/docs/git-rm "git-rm(1)")
 + Esta operación guarda una entrada en la [bitácora del repositorio](https://git-scm.com/docs/git-log "git-log(1)")
 + El archivo también se borra del <span style="color: OrangeRed;">**Directorio de trabajo**</span>
+
+--------------------------------------------------------------------------------
+
+#### 2.5. Borrar archivos (_cont_.)
+
 + Se conservan las versiones anteriores en el repositorio
 + La página de `man` de `git rm` muestra las opciones de línea de comandos
 
@@ -581,7 +736,7 @@ git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch] [--quiet] [--] <fi
 
 --------------------------------------------------------------------------------
 
-### 2.5.1. Ejemplo de git-rm
+##### 2.5.1. Ejemplo de `git-rm(1)`
 
 + [`git rm`](https://git-scm.com/docs/git-rm "git-rm(1)") borra el archivo del <span style="color: OrangeRed;">**Directorio de trabajo**</span> y marca el cambio en el <span style="color: DarkCyan;">**Área de Staging**</span>
 
@@ -600,6 +755,10 @@ Changes to be committed:
 	deleted:    archivo-para-borrar
 ```
 
+--------------------------------------------------------------------------------
+
+##### 2.5.1. Ejemplo de `git-rm(1)` (_cont_.)
+
 + Es necesario guardar el cambio en el <span style="color: DimGrey;">**directorio `.git`**</span> con [`git commit`](https://git-scm.com/docs/git-commit "git-commit(1)")
 
 ```sh
@@ -611,7 +770,7 @@ tonejito@linux:~/repositorio$ git commit -m "Prueba de git-rm" archivo-para-borr
 
 --------------------------------------------------------------------------------
 
-## 2.6. Mover archivos
+#### 2.6. Mover archivos
 
 + El comando [`git mv`](https://git-scm.com/docs/git-mv "git-mv(1)") se utiliza para **mover** o **renombrar** archivos del repositorio
 + No utilizar `mv` o renombrar desde el *navegador de archivos*
@@ -626,7 +785,7 @@ git mv [-v] [-f] [-n] [-k] <source> ... <destination directory>
 
 --------------------------------------------------------------------------------
 
-### 2.6.1. Ejemplo de git-mv
+##### 2.6.1. Ejemplo de `git-mv(1)`
 
 + Creación de archivos de prueba
 
@@ -639,6 +798,10 @@ tonejito@linux:~/repositorio$ git commit -m "Archivos vacíos para prueba de git
  create mode 100644 archivo-para-mover
  create mode 100644 archivo-para-renombrar
 ```
+
+--------------------------------------------------------------------------------
+
+##### 2.6.1. Ejemplo de `git-mv(1)` (_cont_.)
 
 + Prueba de [`git mv`](https://git-scm.com/docs/git-mv "git-mv(1)") moviendo un archivo a otro directorio y renombrando otro archivo
 
@@ -656,7 +819,7 @@ tonejito@linux:~/repositorio$ git commit -m "Prueba de git-mv"
 
 --------------------------------------------------------------------------------
 
-## 2.7. Enviar cambios al servidor
+#### 2.7. Enviar cambios al servidor
 
 + En los repositorios que se han clonado, es común tener una URL para descargar (*fetch*) y otra para enviar (*push*)
 + El repositorio remoto se llama `origin` y la rama por defecto se llama `master`
@@ -664,10 +827,15 @@ tonejito@linux:~/repositorio$ git commit -m "Prueba de git-mv"
 
 --------------------------------------------------------------------------------
 
-### 2.7.1. Listar la URL del repositorio remoto
+##### 2.7.1. Listar la URL del repositorio remoto
 
 + Para enviar cambios al servidor es necesario tener configurada una URL remota para envío o *push*
 + Es posible listar las URL de los repositorios remotos con [`git remote`](https://git-scm.com/docs/git-remote "git-remote(1)")
+
+--------------------------------------------------------------------------------
+
+##### 2.7.1. Listar la URL del repositorio remoto (_cont_.)
+
 + En un nuevo repositorio es necesario establecer la URL remota
 
 ```sh
@@ -679,7 +847,7 @@ origin	https://github.com/tonejito/repositorio.git (push)
 
 --------------------------------------------------------------------------------
 
-### 2.7.2. Enviar cambios con git-push
+##### 2.7.2. Enviar cambios con `git-push(1)`
 
 + Para enviar los cambios al servidor *la primera vez* se ejecuta [`git push`](https://git-scm.com/docs/git-push "git-push(1)") de la siguiente manera
 
@@ -697,6 +865,10 @@ To https://github.com/tonejito/repositorio.git
 Branch master set up to track remote branch master from origin.
 ```
 
+--------------------------------------------------------------------------------
+
+##### 2.7.2. Enviar cambios con `git-push(1)` (_cont_.)
+
 + Las demás veces sólo es necesario utilizar `git push`
 
 ```sh
@@ -712,27 +884,58 @@ To https://github.com/tonejito/repositorio.git
    4f30937..be47c1b  master -> master
 ```
 
+--------------------------------------------------------------------------------
+
+##### 2.7.2. Enviar cambios con `git-push(1)` (_cont_.)
+
 + Dependiendo de la versión y configuración de git, puede aparecer una advertencia sobre `push.default`
 
 --------------------------------------------------------------------------------
 
-## 2.8. Revisar el estado de los archivos en el directorio de trabajo
+#### 2.8. Revisar el estado de los archivos en el directorio de trabajo
 
 + `git` reconoce cuando se realizan cambios en los archivos del <span style="color: OrangeRed;">**Directorio de trabajo**</span>
 + Para guardar los cambios en el repositorio del <span style="color: DimGrey;">**directorio `.git`**</span> es necesario ejecutar [`git commit`](https://git-scm.com/docs/git-commit "git-commit(1)")
 
+--------------------------------------------------------------------------------
+
 Estado del archivo                                     | Comando                         | Descripción
 :----------------------------------------------------: | :------------------------------ | :-----------
 <span style="color: Black;">**Untracked**</span>       | `touch   <file>`                | Se creó un nuevo archivo en el <span style="color: OrangeRed;">**Directorio de trabajo**</span><br/>Aún no se agrega al control de versiones
+
+--------------------------------------------------------------------------------
+
+Estado del archivo                                     | Comando                         | Descripción
+:----------------------------------------------------: | :------------------------------ | :-----------
 <span style="color: OliveDrab;">**new file**</span>    | `git add <file>`                | Se agregó un nuevo archivo para ser versionado
+
+--------------------------------------------------------------------------------
+
+Estado del archivo                                     | Comando                         | Descripción
+:----------------------------------------------------: | :------------------------------ | :-----------
 <span style="color: FireBrick;">**deleted**</span>     | `git rm  <file>`                | El archivo se borró del repositorio
+
+--------------------------------------------------------------------------------
+
+Estado del archivo                                     | Comando                         | Descripción
+:----------------------------------------------------: | :------------------------------ | :-----------
 <span style="color: Indigo;">**renamed**</span>        | `git mv  <src> <dst>`           | El archivo cambió de nombre o fue movido
+
+--------------------------------------------------------------------------------
+
+Estado del archivo                                     | Comando                         | Descripción
+:----------------------------------------------------: | :------------------------------ | :-----------
 <span style="color: DarkOrange;">**modified**</span>   | `gedit   <file>`                | El contenido del archivo fue modificado
+
+--------------------------------------------------------------------------------
+
+Estado del archivo                                     | Comando                         | Descripción
+:----------------------------------------------------: | :------------------------------ | :-----------
 <span style="color: Crimson;">**both modified**</span> | :sweat_smile: :gun: :rage:      | Es necesario hacer `merge` :scream:
 
 --------------------------------------------------------------------------------
 
-### 2.8.1. **Untracked files** - Archivos nuevos sin versionar
+##### 2.8.1. **Untracked files** - Archivos nuevos sin versionar
 
 + Cuando se crea un archivo nuevo, se marca como <span style="color: Black;">**Untracked**</span>
 + Para agregar el archivo al repositorio se utiliza `git add` (ver siguiente sección)
@@ -752,7 +955,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 --------------------------------------------------------------------------------
 
-### 2.8.2. `git add` ⇨ **new file**
+##### 2.8.2. `git add` ⇨ **new file**
 
 + Para <span style="color: OliveDrab;">**agregar**</span> un archivo nuevo al repositorio se utiliza `git add`
 + No olvidar ejecutar `git commit` para guardar el cambio
@@ -769,7 +972,7 @@ Changes to be committed:
 
 --------------------------------------------------------------------------------
 
-### 2.8.3. `git rm` ⇨ **deleted**
+##### 2.8.3. `git rm` ⇨ **deleted**
 
 + Para <span style="color: FireBrick;">**borrar**</span> un archivo del repositorio se utiliza `git rm`
 + No olvidar ejecutar `git commit` para guardar el cambio
@@ -787,10 +990,15 @@ Changes to be committed:
 
 --------------------------------------------------------------------------------
 
-### 2.8.4. `git mv` ⇨ **renamed**
+##### 2.8.4. `git mv` ⇨ **renamed**
 
 + Para <span style="color: Indigo;">**mover**</span> un archivo del repositorio a otra carpeta se utiliza `git rm`
 + También se utiliza para <span style="color: Indigo;">**cambiar de nombre**</span> a los archivos
+
+--------------------------------------------------------------------------------
+
+##### 2.8.4. `git mv` ⇨ **renamed** (_cont_.)
+
 + No olvidar ejecutar `git commit` para guardar el cambio
 
 ```
@@ -807,10 +1015,15 @@ Changes to be committed:
 
 --------------------------------------------------------------------------------
 
-### 2.8.5. **modified** - Archivos editados
+##### 2.8.5. **modified** - Archivos editados
 
 + Al <span style="color: DarkOrange;">**editar**</span> un archivo, git lo marca como **modified**
 + No olvidar ejecutar `git commit` para guardar el cambio
+
+--------------------------------------------------------------------------------
+
+##### 2.8.5. **modified** - Archivos editados (_cont_.)
+
 + Si se desea regresar a la *última versión conocida*, ejecutar `git checkout <archivo>`
 
 ```
@@ -828,7 +1041,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 --------------------------------------------------------------------------------
 
-## 2.9. Bitácora de revisiones del proyecto
+#### 2.9. Bitácora de revisiones del proyecto
 
 + El comando [`git log`](https://git-scm.com/docs/git-log "git-log(1)") se utiliza para visualizar la *bitácora de revisiones del proyecto*
 + En la bitácora se muestra cada commit realizado en la rama actual
@@ -844,6 +1057,15 @@ Date:   Thu Jun 9 10:53:34 2016 -0500
     + Código base `html5` sin estilos
 
 ...	...	...	...	...	...	más entradas del log	...
+```
+
+--------------------------------------------------------------------------------
+
+#### 2.9. Bitácora de revisiones del proyecto (_cont_.)
+
+
+```sh
+...	...	...	...	...	...	más entradas del log	...
 
 commit 1b75a81323d5a6befff5d4ddfd3ad3254914c8da
 Author: Andrés Hernández <andres.hernandez@ciencias.unam.mx>
@@ -856,7 +1078,7 @@ Date:   Wed Jun 8 13:46:21 2016 -0500
 
 --------------------------------------------------------------------------------
 
-# 3. Configuración del cliente git
+### 3. Configuración del cliente git
 
 + Hasta ahora los mensajes del commit han sido atribuidos a un autor *anónimo*
 + ¿Qué pasa si trabajo con *más de una* cuenta de correo asociada a git?
@@ -874,22 +1096,36 @@ Date:   Tue 19 Jan 03:14:08 2038 +0000
 
 --------------------------------------------------------------------------------
 
-### 3.0.1. Secciones de configuración de git
+##### 3.0.1. Secciones de configuración de git
 
 + Existen tres ubicaciones donde se puede configurar el cliente git
 + El cliente de git toma en cuenta los valores más específicos
 
+--------------------------------------------------------------------------------
+
 Ubicación                     | Directorio        | Descripción
 :----------------------------:|:------------------|:----------------------------
 System-wide <br/> **Sistema** | `/etc/gitconfig`  | Archivo de configuración global para todos los repositorios presentes en el sistema
+
+--------------------------------------------------------------------------------
+
+Ubicación                     | Directorio        | Descripción
+:----------------------------:|:------------------|:----------------------------
 Global <br/> **Usuario**      | `~/.gitconfig`    | Archivo de configuración que aplica para todos los repositorios del usuario
+
+--------------------------------------------------------------------------------
+
+Ubicación                     | Directorio        | Descripción
+:----------------------------:|:------------------|:----------------------------
 Local <br/> **Repositorio**   | `$GIT_DIR/config` | Aplica únicamente para el repositorio actual
 
 --------------------------------------------------------------------------------
 
-## 3.1. Datos del usuario
+#### 3.1. Datos del usuario
 
-### 3.1.1. Configuración global para el usuario
+--------------------------------------------------------------------------------
+
+##### 3.1.1. Configuración global para el usuario
 
 + Es útil establecer la configuración global para **todos los repositorios** de git del usuario actual
 
@@ -904,7 +1140,7 @@ tonejito@linux:~$ cat ~/.gitconfig
 
 --------------------------------------------------------------------------------
 
-### 3.1.2. Configuración local para el repositorio
+##### 3.1.2. Configuración local para el repositorio
 
 + Para un repositorio donde se necesite realizar commits con otra cuenta de correo utilizar la **configuración local**
 
@@ -919,14 +1155,26 @@ tonejito@linux:~/repositorio$ cat .git/config
 
 --------------------------------------------------------------------------------
 
-## 3.2. Reparar fin de línea en los archivos
+#### 3.2. Reparar fin de línea en los archivos
 
 + El retorno de línea cambia dependiendo del sistema operativo :confused:
+
+--------------------------------------------------------------------------------
 
 Sistema operativo                     | Retorno de línea |Descripción
 :------------------------------------:|:----------------:|:---------------------
 UNIX / BSD / Solaris / MacOSX / Linux | `LF`             | El salto de línea se representa con el caracter `\n`
+
+--------------------------------------------------------------------------------
+
+Sistema operativo                     | Retorno de línea |Descripción
+:------------------------------------:|:----------------:|:---------------------
 MacOS <= 9.2.2 <br/> *Classic*        | `CR`             | El salto de línea se representa con el caracter `\r`
+
+--------------------------------------------------------------------------------
+
+Sistema operativo                     | Retorno de línea |Descripción
+:------------------------------------:|:----------------:|:---------------------
 **Windows**                           | `CR-LF`          | El salto de línea se representa con el caracter `\r` seguido de `\n`
 
 --------------------------------------------------------------------------------
@@ -944,32 +1192,62 @@ tonejito@linux:~$ cat .gitconfig
 
 --------------------------------------------------------------------------------
 
-## 3.3. Ignorar espacios en blanco
+#### 3.3. Ignorar espacios en blanco
 
 Un problema común con algunos editores es que agregan espacios en blanco sin que el usuario se de cuenta
+
+--------------------------------------------------------------------------------
 
 Elemento              | Activo <br> por defecto                        | Descripción
 :--------------------:|:----------------------------------------------:|:-------
 `blank-at-eol`        | <span style="color: OliveDrab;">**SI**</span> | Quita espacios en blanco al final de la línea
+--------------------------------------------------------------------------------
+
+Elemento              | Activo <br> por defecto                        | Descripción
+:--------------------:|:----------------------------------------------:|:-------
 `blank-at-eof`        | <span style="color: OliveDrab;">**SI**</span> | Quita lineas vacías al final del archivo
+
+--------------------------------------------------------------------------------
+
+Elemento              | Activo <br> por defecto                        | Descripción
+:--------------------:|:----------------------------------------------:|:-------
 `space-before-tab`    | <span style="color: OliveDrab;">**SI**</span> | Quita espacios antes de un caracter `<TAB>` en el principio de la línea
-`indent-with-non-tab` | <span style="color:   DarkRed;">**NO**</span> | Busca lineas que estan identadas con espacios, se controla con la directiva `tabwidth`
+
+--------------------------------------------------------------------------------
+
+Elemento              | Activo <br> por defecto                        | Descripción
+:--------------------:|:----------------------------------------------:|:-------
+`indent-with-non-tab` | <span style="color:   DarkRed;">**NO**</span> | Busca lineas que estan identadas con espacios, se controla con la directiva  `tabwidth`
+
+--------------------------------------------------------------------------------
+
+Elemento              | Activo <br> por defecto                        | Descripción
+:--------------------:|:----------------------------------------------:|:-------
 `tab-in-indent`       | <span style="color:   DarkRed;">**NO**</span> | Busca `<TAB>` en la identación de las lineas
+
+--------------------------------------------------------------------------------
+
+Elemento              | Activo <br> por defecto                        | Descripción
+:--------------------:|:----------------------------------------------:|:-------
 `cr-at-eol`           | <span style="color:   DarkRed;">**NO**</span> | Identifica el caracter `<CR>` como válido al final de la linea
 
 --------------------------------------------------------------------------------
 
-### Ejemplo de `core.whitespace`
+##### Ejemplo de `core.whitespace`
 
 * Para establecer estos valores se utiliza `git config` para modificar la directiva `core.whitespace`
 * Los elementos especificados se activan al incluirlos en el valor de la directiva
 * Los elementos que no se especifican o que comienzan con un símbolo `-` son excluidos
+
+--------------------------------------------------------------------------------
 
 Para establecer el valor de `core.whitespace` utilizaremos las siguientes características:
 
 * Se desean los elementos `blank-at-eol`, `blank-at-eof` y `space-before-tab`
 * Desactivamos explícitamente `indent-with-non-tab` y `tab-in-indent`
 * Desactivamos implícitamente `cr-at-eol` ya que no se especifica en el valor
+
+--------------------------------------------------------------------------------
 
 ```sh
 tonejito@linux:~$ git config core.whitespace blank-at-eol,blank-at-eof,space-before-tab,-indent-with-non-tab,-tab-in-indent
@@ -981,23 +1259,37 @@ tonejito@linux:~$ cat .gitconfig
 
 --------------------------------------------------------------------------------
 
-# 4. Trabajando con repositorios existentes
+### 4. Trabajando con repositorios existentes
 
-## 4.1. Clonar un repositorio existente
+--------------------------------------------------------------------------------
 
-## 4.2. Resolución de conflictos
+#### 4.1. Clonar un repositorio existente
 
-## 4.3. Corregir el commit anterior
+--------------------------------------------------------------------------------
+
+#### 4.2. Resolución de conflictos
+
+--------------------------------------------------------------------------------
+
+#### 4.3. Corregir el commit anterior
 
 --------------------------------------------------------------------------------
 
 # 5. Introducción a Github
 
+--------------------------------------------------------------------------------
+
 ## 5.1. Crear una cuenta en Github
+
+--------------------------------------------------------------------------------
 
 ## 5.2. Administración de repositorios via web
 
+--------------------------------------------------------------------------------
+
 ## 5.3. Cliente gráfico de git para Mac y Windows
+
+--------------------------------------------------------------------------------
 
 ## 5.4. Documentación en Markdown
 
@@ -1005,18 +1297,29 @@ tonejito@linux:~$ cat .gitconfig
 
 # 6. Trabajo colaborativo en Github
 
+--------------------------------------------------------------------------------
+
 ## 6.1. Fork
+
+--------------------------------------------------------------------------------
 
 ## 6.2. Pull requests
 
+--------------------------------------------------------------------------------
+
 ## 6.3. gist
 
+--------------------------------------------------------------------------------
+
 ## 6.4. Github Pages
+
+--------------------------------------------------------------------------------
 
 ## 6.5. Wikis
 
 --------------------------------------------------------------------------------
 
+<!--
 # Got 15 minutes and want to learn Git?
 
 + Curso interactivo de git
@@ -1027,7 +1330,8 @@ tonejito@linux:~$ cat .gitconfig
     <img style="width: 40%; height: auto; margin-left: auto; margin-right: auto; display: block;" alt="try-git by CodeSchool and Github" src="img/2-try-git-flyer.png" />
   </a>
 </span>
-<div style="clear: both;" />
+<div style="clear: both;"></div>
+-->
 
 --------------------------------------------------------------------------------
 
@@ -1050,4 +1354,3 @@ tonejito@linux:~$ cat .gitconfig
 + http://marklodato.github.io/visual-git-guide/index-en.html
 + http://think-like-a-git.net/
 + https://rogerdudler.github.io/git-guide/
-

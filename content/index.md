@@ -33,3 +33,10 @@ lang: es-MX
 |	|	|
 |:------|:------|
 | [Sitios web con WordPress](wordpress) | Mayo 2024
+
+--------------------------------------------------------------------------------
+
+|	|	|
+|:------|:------|
+| [Modalidades de contratación y pago](modalidades-de-contratacion) | Mayo 2021 <!-- 2021-05-25 -->
+| [Finanzas personales](finanzas-personales) | Mayo 2021 <!-- 2021-05-27 -->

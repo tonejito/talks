@@ -28,7 +28,8 @@ jobs:
       # This image runs with the 'root' user, thus the following warning WILL appear when executing PIP
         # WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager.
         # It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
-      image: python:3.11-slim-bullseye
+      # image: python:3.11-slim-bullseye
+      image: python:3.14-slim-trixie
     defaults:
       run:
         shell: bash
@@ -95,7 +96,8 @@ jobs:
         shell: bash
         env:
           # PANDOC_VERSION: "3.1.2"
-          PANDOC_VERSION: "3.6.3"
+          # PANDOC_VERSION: "3.6.3"
+          PANDOC_VERSION: "3.9.0.2"
           # PANDOC_TAR_URL: "https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-linux-amd64.tar.gz"
           PANDOC_TAR: "/tmp/pandoc.tar.gz"
         run: |
@@ -109,7 +111,9 @@ jobs:
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout repository
-        uses: actions/checkout@v3
+        # uses: actions/checkout@v3
+        # uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v6
         with:
           set-safe-directory: true
 
@@ -122,7 +126,7 @@ jobs:
           chown -R "$(id -u):$(id -g)" "${GITHUB_WORKSPACE}"
 
       - name: Run pre-commit via custom action
-        uses: pre-commit/action@v3.0.0
+        uses: pre-commit/action@v3.0.1
 
       - name: Build the site with Makefile
         shell: bash
@@ -144,7 +148,9 @@ jobs:
 
       - name: Upload artifact
         # uses: actions/upload-artifact@v3.1.0
-        uses: actions/upload-artifact@v4
+        # uses: actions/upload-artifact@v4
+        # uses: actions/upload-artifact@v7.0.1
+        uses: actions/upload-artifact@v7
         with:
           name: github-pages
           path: /tmp/artifact.tar
@@ -166,6 +172,8 @@ jobs:
       - name: Deploy GitHub pages
         id: deployment
         # uses: actions/deploy-pages@v1.0.6
-        uses: actions/deploy-pages@v4
+        # uses: actions/deploy-pages@v4
+        # uses: actions/deploy-pages@v5.0
+        uses: actions/deploy-pages@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

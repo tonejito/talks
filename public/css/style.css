@@ -5,6 +5,13 @@ https://www.w3schools.com/colors/colors_names.asp
 https://www.w3schools.com/colors/colors_groups.asp
 */
 
+.backgrounds {
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
 html, body, section, div, p, a, li
 {
   font-family: "Ubuntu", "Helvetica", sans-serif !important;
@@ -13,6 +20,11 @@ html, body, section, div, p, a, li
 pre, code
 {
   font-family: "Ubuntu Mono", "Courier New", monospace !important;
+}
+
+.reveal
+{
+  font-family: "Ubuntu", "Helvetica", sans-serif !important;
 }
 
 code

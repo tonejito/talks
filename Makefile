@@ -10,7 +10,7 @@ CONTENT_DIR=content
 PUBLIC_DIR=public
 PANDOC_FLAGS=--defaults ${PANDOC_CFG}
 
-DIRS=$(shell find ${CONTENT_DIR} -mindepth 1 -maxdepth 1 -type d \( ! -name '.*' \) -print | awk -F / '{print $$(NF)}')
+DIRS=$(shell find ${CONTENT_DIR} -mindepth 1 -maxdepth 1 -type d \( ! -name '.*' \) -print | awk -F / '{print $$(NF)}' | egrep -v 'css|img|js')
 
 default:	index build list
 
@@ -19,12 +19,23 @@ all:	default serve
 check:
 	pre-commit run --all-files
 
-index:
+public_dir:
 	test -d "${PUBLIC_DIR}" || mkdir -vp "${PUBLIC_DIR}"
+
+index:	public_dir
+	touch ${PUBLIC_DIR}/favicon.ico
 	pandoc ${PANDOC_FLAGS} -o ${PUBLIC_DIR}/index.html ${CONTENT_DIR}/index.md
 
-build:
-	touch ${PUBLIC_DIR}/favicon.ico
+build:	public_dir
+	for DIR in css js img ; \
+	do \
+	  if [ -d ${CONTENT_DIR}/$${DIR} ] ; \
+	  then \
+	    test -d ${PUBLIC_DIR}/$${DIR} || mkdir -vp ${PUBLIC_DIR}/$${DIR}/ ; \
+	    cp -vr ${CONTENT_DIR}/$${DIR} ${PUBLIC_DIR} ; \
+	  fi ; \
+	done
+
 	for DIR in $(DIRS) ; \
 	do \
 	  echo $${DIR} ; \

@@ -2,7 +2,7 @@
 #	= ^ . ^ =
 # https://gitignore.io/api/macos,vim
 
-public/**/index.html
+public/
 
 ### Vim ###
 # Swap

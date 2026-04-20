@@ -3,7 +3,7 @@ title: Introducción a GNU/Linux
 subtitle: "% ENV=var ./a.out 0<STDIN 1>STDOUT 2>STDERR"
 author:
 - Andrés Hernández - `tonejito`
-date: Agosto 2023
+date: Febrero 2025
 affiliation:
 - http://localhost/
 abstract: |

@@ -12,6 +12,17 @@ https://www.w3schools.com/colors/colors_groups.asp
   background-repeat: no-repeat;
 }
 
+p {
+  text-align: left;
+}
+
+p, a, li
+{
+  /* font-size: xx-large; */
+  /* font-size:1.5cap; */
+  /* font-size:1.5ch; */
+}
+
 html, body, section, div, p, a, li
 {
   font-family: "Ubuntu", "Helvetica", sans-serif !important;
@@ -85,6 +96,39 @@ code
   width: auto;
   height: 0.6em;
   display: inline-block;
+}
+
+.icon-small
+{
+  width: auto;
+  height: 0.75em;
+  text-align: center !important;
+  line-height: -0.1em;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: 0px !important;
+}
+
+.icon-large
+{
+  width: auto;
+  height: 5em;
+  text-align: center !important;
+  line-height: -0.1em;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: 0px !important;
+}
+
+.icon-larger
+{
+  width: auto;
+  height: 7em;
+  text-align: center !important;
+  line-height: -0.1em;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: 0px !important;
 }
 
 .icon

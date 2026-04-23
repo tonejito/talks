@@ -15,6 +15,8 @@ lang: es-MX
 
 |	|	|
 |:------|:------|
+| [Modalidades de contratación y pago](modalidades-de-contratacion) | Abril 2026 <!-- 2021-05-25 -->
+| [Finanzas personales](finanzas-personales) | Abril 2026 <!-- 2021-05-27 -->
 | [Control de versiones con `git`](curso-git) | Febrero 2026
 | [Introducción a GNU/Linux](gnu-linux) | Febrero 2026
 | [Presentación: Redes](presentacion-redes) | Enero 2026
@@ -35,8 +37,3 @@ lang: es-MX
 | [Sitios web con WordPress](wordpress) | Mayo 2024
 
 --------------------------------------------------------------------------------
-
-|	|	|
-|:------|:------|
-| [Modalidades de contratación y pago](modalidades-de-contratacion) | Mayo 2021 <!-- 2021-05-25 -->
-| [Finanzas personales](finanzas-personales) | Mayo 2021 <!-- 2021-05-27 -->

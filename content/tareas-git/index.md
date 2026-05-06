@@ -283,7 +283,7 @@ Nombre de los archivos : Realidad 🤨 🤦 🔥
 <div class="caption">Queremos _Google Classroom_</div>
 <div class="margin-zero">
   <p class="margin-zero">
-    <img class="caption margin-zero" src="img/rick-harrison.jpg" title="Lo mejor que puedo hacer es una página con notas" data-lazy-loaded="">
+    <img class="caption margin-zero" src="img/memes/rick-harrison.jpg" title="Lo mejor que puedo hacer es una página con notas" data-lazy-loaded="">
   </p>
 </div>
 <div class="caption">Lo mejor que puedo hacer es una página con notas</div>
@@ -743,7 +743,7 @@ Para los alumnos
 <div class="caption">&nbsp;<br/>&nbsp;</div>
 <div class="margin-zero">
   <p class="margin-zero">
-    <img class="caption margin-zero" src="img/pool-boy.jpg" title="Yo también quiero vivir ese sueño señor Pool" data-lazy-loaded="">
+    <img class="caption margin-zero" src="img/memes/pool-boy.jpg" title="Yo también quiero vivir ese sueño señor Pool" data-lazy-loaded="">
   </p>
 </div>
 <div class="caption">Yo también quiero vivir ese sueño señor Pool</div>

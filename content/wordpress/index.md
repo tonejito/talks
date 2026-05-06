@@ -42,18 +42,18 @@ lang: es-MX
 :::::::::::::: {.columns}
 ::: {.column width="33%"}
 
-<!-- ![](img/backend-dev.jpg) -->
-![](img/backend-developer.png)
+<!-- ![](img/memes/backend-dev.jpg) -->
+![](img/memes/backend-developer.png)
 
 :::
 ::: {.column width="33%"}
 
-![](img/backend-dev-css.png)
+![](img/memes/backend-dev-css.png)
 
 :::
 ::: {.column width="33%"}
 
-![](img/yaml-ruler.jpg)
+![](img/memes/yaml-ruler.jpg)
 
 :::
 ::::::::::::::
@@ -73,15 +73,13 @@ lang: es-MX
 
 --------------------------------------------------------------------------------
 
-<!-- ![](img/three-head-dragon.jpg) -->
-
-<div class="caption" style="text-align:left;">WordPress, Drupal &ensp;...&emsp;</div>
+<div class="caption margin-zero" style="text-align:left;">WordPress, Drupal &ensp;...&emsp;</div>
 <div class="margin-zero">
   <p class="margin-zero">
-    <img class="caption margin-zero" src="img/three-head-dragon.png" title="WordPress, Drupal y Joomla" data-lazy-loaded="">
+    <img class="caption margin-zero" src="img/memes/three-head-dragon.jpg" title="WordPress, Drupal y Joomla" data-lazy-loaded="">
   </p>
 </div>
-<div class="caption" style="text-align:right;">&emsp;...&ensp; y Joomla 🙄</div>
+<div class="caption margin-zero" style="text-align:right;">&emsp;...&ensp; y Joomla 🙄</div>
 
 --------------------------------------------------------------------------------
 
@@ -170,7 +168,16 @@ Páginas
 
 <!-- ## Características de WordPress -->
 
-![](img/morpheus-website.jpg)
+<div class="caption margin-zero">What if I told you</div>
+<div class="margin-zero">
+  <p class="margin-zero">
+    <img class="caption margin-zero" data-lazy-loaded="" src="img/memes/morpheus-what-if-i-told-you.jpg" title="">
+  </p>
+</div>
+<div class="caption margin-zero">that building a website doesn't have to be painful</div>
+
+::: notes
+:::
 
 --------------------------------------------------------------------------------
 
@@ -232,7 +239,16 @@ Páginas
 
 ### Desarrollo en WordPress
 
-![](img/js-framework-fight-vs-wp-money.png)
+<div class="caption margin-zero">People on twitter fighting over which JS framework is better</div>
+<div class="margin-zero">
+  <p class="margin-zero">
+    <img class="caption margin-zero" data-lazy-loaded="" src="img/memes/takeaway-fight.jpg" title="">
+  </p>
+</div>
+<div class="caption margin-zero">Me making money from WordPress websites</div>
+
+::: notes
+:::
 
 --------------------------------------------------------------------------------
 
@@ -292,13 +308,13 @@ Framework de aplicaciones
 
 --------------------------------------------------------------------------------
 
-<div class="caption">&nbsp;<br/>&nbsp;</div>
+<div class="caption margin-zero">&nbsp;<br/>&nbsp;</div>
 <div class="margin-zero">
   <p class="margin-zero">
-    <img class="caption margin-zero" src="img/pool-boy.jpg" title="Yo también quiero vivir ese sueño señor Pool" data-lazy-loaded="">
+    <img class="caption margin-zero" src="img/memes/pool-boy.jpg" title="Yo también quiero vivir ese sueño señor Pool" data-lazy-loaded="">
   </p>
 </div>
-<div class="caption">Yo también quiero vivir ese sueño señor Pool</div>
+<div class="caption margin-zero">Yo también quiero vivir ese sueño señor Pool</div>
 
 --------------------------------------------------------------------------------
 
@@ -343,7 +359,16 @@ Roles y manejo de usuarios
 
 ### Mantenimiento
 
-![](img/too-many-plugins.jpg)
+<div class="caption margin-zero">My site is slow…</div>
+<div class="margin-zero">
+  <p class="margin-zero">
+    <img class="caption margin-zero" data-lazy-loaded="" src="img/memes/conspiracy-keanu.jpg" title="">
+  </p>
+</div>
+<div class="caption margin-zero" style="font-style:italic;">(&emsp;Has 40 active WordPress plugins&ensp;)</div>
+
+::: notes
+:::
 
 --------------------------------------------------------------------------------
 
@@ -406,7 +431,16 @@ Bitácoras
 
 --------------------------------------------------------------------------------
 
-![](img/wp-cli-vs-wp-webadmin.png)
+<div class="caption margin-zero" style="text-align:left;">&ensp;😎&emsp;<code>wp-cli</code></div>
+<div class="margin-zero">
+  <p class="margin-zero">
+    <img class="caption margin-zero" data-lazy-loaded="" src="img/memes/doge-then-vs-now.jpg" title="">
+  </p>
+</div>
+<div class="caption margin-zero" style="text-align:right;">WordPress web-ui&ensp;😭&emsp;</div>
+
+::: notes
+:::
 
 --------------------------------------------------------------------------------
 
@@ -477,7 +511,16 @@ wp core version
 
 ### Modo de mantenimiento
 
-![](img/one-does-not-simply-maintenance.jpg)
+<div class="caption margin-zero">One does not simply</div>
+<div class="margin-zero">
+  <p class="margin-zero">
+    <img class="caption margin-zero" data-lazy-loaded="" src="img/memes/one-does-not-simply.jpg" title="">
+  </p>
+</div>
+<div class="caption margin-zero">shut down the site</div>
+
+::: notes
+:::
 
 --------------------------------------------------------------------------------
 
@@ -489,9 +532,18 @@ wp core version
 
 --------------------------------------------------------------------------------
 
-### Respaldo
+### Respaldos
 
-![](img/AustinPowers-no-backup.png)
+<div class="caption margin-zero">No backup?</div>
+<div class="margin-zero">
+  <p class="margin-zero">
+    <img class="caption margin-zero" data-lazy-loaded="" src="img/memes/austin-powers-live-dangerously.jpg" title="">
+  </p>
+</div>
+<div class="caption margin-zero">I too like to live dangerously&ensp;…&emsp;</div>
+
+::: notes
+:::
 
 --------------------------------------------------------------------------------
 
@@ -508,7 +560,16 @@ wp core version
 
 ### Actualización
 
-![](img/forgot-wp-update.jpg)
+<div class="caption margin-zero">We forgot to update WordPress core&ensp;…&emsp;</div>
+<div class="margin-zero">
+  <p class="margin-zero">
+    <img class="caption margin-zero" data-lazy-loaded="" src="img/memes/silicon-valley-but-he-and-i-had-a-deal.jpg" title="">
+  </p>
+</div>
+<div class="caption margin-zero">&ensp;…&emsp;the site got hacked</div>
+
+::: notes
+:::
 
 --------------------------------------------------------------------------------
 
@@ -523,6 +584,8 @@ wp core version
 - `wp maintenance-mode deactivate`
 
 --------------------------------------------------------------------------------
+
+##### Actualización de WordPress Core
 
 ![](img/wp-updates.png)
 
@@ -635,6 +698,8 @@ Success: 100 test comments have been successfully generated.
 ```
 
 --------------------------------------------------------------------------------
+
+##### Contenido de ejemplo de WordPress
 
 ![](img/wp-sample-content.png)
 

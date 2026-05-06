@@ -386,13 +386,13 @@ Siempre hay uno o más profesores responsables que revisan lo que hacen los alum
 - 📜 [CONDUSEF: Diplomado finanzas personales](https://diplomado.condusef.gob.mx/)
 - 📚 [Sofía Macías: "_Pequeño cerdo capitalista_"](https://www.pequenocerdocapitalista.com/)
 - 🧚 [Fra Salazar - _El Hada de las Vacantes_](https://ElHadadelasVacantes.com/)
-- ![](../img/instagram.webp){.icon-small} [Cristina Palazuelos: `@crisysuscuentas`](https://www.instagram.com/crisysuscuentas/)
-- ![](../img/instagram.webp){.icon-small} [Lucía Herrera: `@lucyhereg`](https://www.instagram.com/lucyhereg/)
-- ![](../img/instagram.webp){.icon-small} [Vivi Mendoza: `@vivi.meendoza`](https://www.instagram.com/vivi.meendoza/)
-- ![](../img/instagram.webp){.icon-small} [Silvia Lozano: `@taxfi_`](https://www.instagram.com/taxfi_/)
-- ![](../img/twitter.png){.icon-small} [Laboralista de Confianza: `@laboralistaconf`](https://twitter.com/laboralistaconf)
-- ![](../img/twitter.png){.icon-small} [Valeria García - _La Konta-Kawaii_](https://twitter.com/ContabiliDarks)
-- ![](../img/twitter.png){.icon-small} [`@WorkingKlassHer`](https://twitter.com/WorkingKlassHer)
+- ![](img/logos/instagram.webp){.icon-small} [Cristina Palazuelos: `@crisysuscuentas`](https://www.instagram.com/crisysuscuentas/)
+- ![](img/logos/instagram.webp){.icon-small} [Lucía Herrera: `@lucyhereg`](https://www.instagram.com/lucyhereg/)
+- ![](img/logos/instagram.webp){.icon-small} [Vivi Mendoza: `@vivi.meendoza`](https://www.instagram.com/vivi.meendoza/)
+- ![](img/logos/instagram.webp){.icon-small} [Silvia Lozano: `@taxfi_`](https://www.instagram.com/taxfi_/)
+- ![](img/logos/twitter.png){.icon-small} [Laboralista de Confianza: `@laboralistaconf`](https://twitter.com/laboralistaconf)
+- ![](img/logos/twitter.png){.icon-small} [Valeria García - _La Konta-Kawaii_](https://twitter.com/ContabiliDarks)
+- ![](img/logos/twitter.png){.icon-small} [`@WorkingKlassHer`](https://twitter.com/WorkingKlassHer)
 
 --------------------------------------------------------------------------------
 

@@ -16,6 +16,9 @@ description: |
 copyright: CC-BY-SA-4.0
 ROBOTS:	NOINDEX, UNFOLLOW
 lang: es-MX
+header-includes: |
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <script async src="//www.instagram.com/embed.js"></script>
 ---
 
 <!--	= ^ . ^ =	-->
@@ -409,5 +412,43 @@ Estás intercambiando el "tener más dinero ahora" por "tener más dinero en el 
 --------------------------------------------------------------------------------
 
 # ¡Gracias!
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+<!--
+  https://www.instagram.com/reel/DWUsnYLyGl9/
+  https://youtube.com/shorts/RZTELREMdrQ
+  https://youtube.com/shorts/_1kFkIdHmhg?si=AngeliqueBoyer-Sindicato-Short
+-->
+<iframe
+  width="389"
+  height="692"
+  src="https://www.youtube.com/embed/_1kFkIdHmhg?si=AngeliqueBoyer-Sindicato-Short"
+  title="Angelique Boyer hace un llamado a la lucha obrera"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+<!--
+  https://www.youtube.com/shorts/RZTELREMdrQ?t=14
+  https://youtu.be/n6EyrrodR3I?si=AngeliqueBoyer-Sindicato
+-->
+<iframe
+  width="975"
+  height="548"
+  src="https://www.youtube.com/embed/n6EyrrodR3I?si=AngeliqueBoyer-Sindicato"
+  title="Angelique Boyer te invita a formar un sindicato"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen>
+</iframe>
 
 --------------------------------------------------------------------------------

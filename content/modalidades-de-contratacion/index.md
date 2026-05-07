@@ -119,7 +119,7 @@ lang: es-MX
 
 --------------------------------------------------------------------------------
 
-## Proceso de entrevista
+### Proceso de entrevista
 
 - Entrevista inicial con el reclutador
 - Entrevista de aptitudes y encaje cultural con el jefe
@@ -128,7 +128,7 @@ lang: es-MX
 
 --------------------------------------------------------------------------------
 
-## Preguntas durante la entrevista
+### Preguntas durante la entrevista
 
 Pregunta TODO para conocer el panorama completo de lo que ofrece la empresa:
 
@@ -139,18 +139,46 @@ Pregunta TODO para conocer el panorama completo de lo que ofrece la empresa:
 
 --------------------------------------------------------------------------------
 
-## Preguntas durante la entrevista (_cont_.)
+### Preguntas durante la entrevista (_cont_.)
 
 De verdad, pregunta TODO:
 
 - ¿Pagan horas extra?
 - Se rolan turnos
 - Hay guardias fines de semana y dias festivos
-- ¿Necesitas estar disponible _on-call_ "por cualquier cosa"?
+- ¿Necesitas estar disponible _on-call_?
 
 --------------------------------------------------------------------------------
 
-## Cuando te van a contratar
+## Preguntas durante la entrevista (_cont_.)
+
+Recuerda:
+
+- El reclutador te está evaluando a tí _"para ver si le convienes a la empresa"_
+
+- Pero tú estás evaluando a la empresa _"para ver si te conviene a tí"_
+
+--------------------------------------------------------------------------------
+
+## Oferta económica
+
+--------------------------------------------------------------------------------
+
+### Cuando te aceptan en el puesto
+
+- Toma TODAS las decisiones **de manera fría y calculada**
+
+- Se vale renunciar cuando ya firmaste contrato para perseguir otra oportunidad mejor
+
+> No es personal, son negocios
+
+--------------------------------------------------------------------------------
+
+## Contratación
+
+--------------------------------------------------------------------------------
+
+### Cuando te van a contratar
 
 - El reclutador te pide documentación para elaborar el contrato
 - Debes sacar tu RFC en el SAT y darte de alta con el régimen correcto
@@ -159,7 +187,7 @@ De verdad, pregunta TODO:
 
 --------------------------------------------------------------------------------
 
-## Firma de contrato
+### Firma de contrato
 
 - Lee todo tu contrato antes de firmarlo
 - Asegúrate de tener copia de tu contrato firmado
@@ -168,21 +196,21 @@ De verdad, pregunta TODO:
 
 --------------------------------------------------------------------------------
 
-## Periodo de prueba
+### Periodo de prueba
 
 - Usualmente son 3 meses
 
 > `#SpoilerAlert`: ¡Esto es importante!
 
 - La empresa te está poniendo a prueba a tí
-- **¡Pero tú también estás poniendo a prueba a la empresa!**
+    - **¡Pero tú también estás poniendo a prueba a la empresa!**
 
 --------------------------------------------------------------------------------
 
 # Modalidades de contratación
 
 - Nómina
-- Esquema mixto
+- _Esquema mixto_ `*`
 - Honorarios
 
 --------------------------------------------------------------------------------
@@ -237,8 +265,8 @@ Se contrata una parte por nómina y otra parte por _asimilados_.
 
 - Muchas veces en el esquema mixto estas contratado por **dos empresas**
 
-  1. Una por nómina (lo mínimo)
-  2. Una por _asimilados_ (lo demás)
+  1. Una por nómina (lo mínimo) 💰
+  2. Una por _asimilados_ (lo demás) 💵💶💴💷
 
 --------------------------------------------------------------------------------
 
@@ -248,10 +276,11 @@ Se contrata una parte por nómina y otra parte por _asimilados_.
 
     - Porque hacen como que "no superaste el periodo de prueba"
     - Aunque tu sigas trabajando en el mismo lugar para el mismo jefe
+    - En el mismo horario y haciendo las mismas cosas
 
 --------------------------------------------------------------------------------
 
-### Esquema mixto - Nómina
+### Esquema mixto: Nómina
 
 - Normalmente es el salario **mínimo**
 - El patrón no paga tanto de prestaciones
@@ -259,7 +288,7 @@ Se contrata una parte por nómina y otra parte por _asimilados_.
 
 --------------------------------------------------------------------------------
 
-### Esquema mixto - Nómina (_cont_.)
+### Esquema mixto: Nómina (_cont_.)
 
 - Genera **muy poco** de ahorro para el retiro
 - El monto que se aporta para INFONAVIT es risible
@@ -267,7 +296,7 @@ Se contrata una parte por nómina y otra parte por _asimilados_.
 
 --------------------------------------------------------------------------------
 
-### Esquema mixto - Asimilados
+### Esquema mixto: Asimilados
 
 - Es la mayoría del sueldo
 - Como _"te pagan por fuera"_ tienes más dinero
@@ -275,7 +304,7 @@ Se contrata una parte por nómina y otra parte por _asimilados_.
 
 --------------------------------------------------------------------------------
 
-### Esquema mixto - Asimilados (_cont_.)
+### Esquema mixto: Asimilados (_cont_.)
 
 Estás intercambiando el "tener más dinero ahora" por "tener más dinero en el futuro"
 
@@ -294,11 +323,16 @@ Estás intercambiando el "tener más dinero ahora" por "tener más dinero en el 
 
 --------------------------------------------------------------------------------
 
-## Honorarios - Requisitos
+## Honorarios: Requisitos
 
 - Consigue un buen contador
 - Saca tu RFC y cámbiate al régimen fiscal adecuado
 - Saca tu e-Firma y contraseña del SAT
+
+--------------------------------------------------------------------------------
+
+## Honorarios: Requisitos (_cont_.)
+
 - Saca factura de TODO lo que compres para deducirlo de impuestos
     - Y págalo con tarjeta de crédito a tu nombre
 - Debes hacer tus declaraciones fiscales mensuales
@@ -306,11 +340,16 @@ Estás intercambiando el "tener más dinero ahora" por "tener más dinero en el 
 
 --------------------------------------------------------------------------------
 
-## Honorarios - Requisitos (_cont_.)
+## Honorarios: Requisitos (_cont_.)
 
 - Consigue clientes
 - Estima BIEN las horas que vayas a trabajar
     - Esto es todo un desafío
+
+--------------------------------------------------------------------------------
+
+## Honorarios: Requisitos (_cont_.)
+
 - Cuidado con los "detalles" de algunos clientes
     - Tiempo de soporte después de la entrega
     - Cambios no documentados (por WA o llamada)
@@ -320,20 +359,30 @@ Estás intercambiando el "tener más dinero ahora" por "tener más dinero en el 
 
 --------------------------------------------------------------------------------
 
-## Honorarios - Proyectos
+## Honorarios: Proyectos
 
 - Puedes cobrar por **hora** o por **proyecto**
 - Asegúrate de tener un contrato con los términos del proyecto
-    - Ojo con las fechas duras de entrega
-    - Puedes pedir un anticipo por el proyecto (que debe estar estipulado en el contrato)
-    - Entrega una propuesta de proyecto y trabaja en ella con el cliente potencial
 
 --------------------------------------------------------------------------------
 
-## Honorarios - Horas
+## Honorarios: Proyectos (_cont_.)
+
+- Ojo con las fechas duras de entrega
+- Puedes pedir un anticipo por el proyecto (que debe estar estipulado en el contrato)
+- Entrega una propuesta de proyecto y trabaja en ella con el cliente potencial
+
+--------------------------------------------------------------------------------
+
+## Honorarios: Horas
 
 - Si cobras por hora, probablemente te pidan una lista de las actividades que hiciste
 - Esta lista es para referencia, no es una bitácora de lo que realizaste
+
+--------------------------------------------------------------------------------
+
+## Honorarios: Horas (_cont_.)
+
 - Algunos clientes te piden un cálculo previo de las horas que te toma hacer alguna cosa o arreglar algún problema
 - Estimar tiempos es un problema bastante complejo
     - Se pesimista en las estimaciones
@@ -351,7 +400,7 @@ Estás intercambiando el "tener más dinero ahora" por "tener más dinero en el 
 - ![](img/logos/instagram.webp){.icon-small} [Silvia Lozano: `@taxfi_`](https://www.instagram.com/taxfi_/)
 - ![](img/logos/twitter.png){.icon-small} [Laboralista de Confianza: `@laboralistaconf`](https://twitter.com/laboralistaconf)
 - ![](img/logos/twitter.png){.icon-small} [Valeria García - _La Konta-Kawaii_](https://twitter.com/ContabiliDarks)
-- ![](img/logos/twitter.png){.icon-small} [`@WorkingKlassHer`](https://twitter.com/WorkingKlassHer)
+- ![](img/logos/twitter.png){.icon-small} [_Héroe de la clase trabajadora_](https://twitter.com/WorkingKlassHer "@WorkingKlassHer")
 
 --------------------------------------------------------------------------------
 
